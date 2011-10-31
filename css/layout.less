@@ -1,0 +1,105 @@
+header {
+	position:fixed;
+	width:380px;
+	height:100%;
+	background:#fff;
+	top:0;
+	left:0;
+	.shadow(0, 0, 5px, 0, #e1e1e1);
+	h1 {
+		font-size:50px;
+		letter-spacing:-2px;
+		line-height:40px;
+	}
+	p {
+		line-height:24px;
+		color: @text-color;
+		text-align:justify;
+		font-weight:200;
+	}
+	.arrow {
+		float:left;
+		width:32px;
+		height:32px;
+		position:absolute;
+		top:60px;
+		right:-12px;
+		z-index:100;
+		.shadow(-5px, 5px, 5px, -5px, #e1e1e1);
+		-moz-transform: scale(1) rotate(-135deg) translate(0px, 0px) skew(0deg, 0deg);
+		-webkit-transform: scale(1) rotate(-135deg) translate(0px, 0px) skew(0deg, 0deg);
+		-o-transform: scale(1) rotate(-135deg) translate(0px, 0px) skew(0deg, 0deg);
+		-ms-transform: scale(1) rotate(-135deg) translate(0px, 0px) skew(0deg, 0deg);
+		transform: scale(1) rotate(-135deg) translate(0px, 0px) skew(0deg, 0deg);
+	}
+	.arrow:before {
+	    content: '';
+	    position: absolute;
+	    top: 0; right: 0;
+	    border-top: 32px solid transparent;
+	    border-left: 32px solid white;
+	    width: 0;
+	}
+}
+section {
+	float:left;
+	margin:0;
+	.showreel {
+		float:left;
+		background: -moz-linear-gradient(-45deg,  rgba(229,229,229,1) 0%, rgba(238,238,238,0) 16%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(16%,rgba(238,238,238,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(-45deg,  rgba(229,229,229,1) 0%,rgba(238,238,238,0) 16%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(-45deg,  rgba(229,229,229,1) 0%,rgba(238,238,238,0) 16%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(-45deg,  rgba(229,229,229,1) 0%,rgba(238,238,238,0) 16%); /* IE10+ */
+		background: linear-gradient(-45deg,  rgba(229,229,229,1) 0%,rgba(238,238,238,0) 16%); /* W3C */
+		.work {
+			margin:0 0 60px;
+			h2 {
+				margin:10px 0 0;
+				letter-spacing:-1px;
+			}
+			img {
+				.border-radius(5px);
+				.shadow(0, 2px, 2px, 0, #e1e1e1);
+			}
+		}
+	}
+}
+@media (max-width:1159px) {
+	header {
+		width:380px;
+		h1 {
+			margin:40px;
+		}
+		p {
+			margin:0 40px 20px;
+		}
+	}
+	section {
+		width:620px;
+		padding:0 0 0 380px;
+		.showreel {
+			width:580px;
+			padding:40px 0 0 40px;
+		}
+	}
+}
+@media (min-width:1160px) and (max-width:1920px) {
+	header {
+		width:450px;
+		h1 {
+			margin:60px;
+		}
+		p {
+			margin:0 60px 20px;
+		}
+	}
+	section {
+		width:620px;
+		padding:0 0 0 450px;
+		.showreel {
+			width:700px;
+			padding:60px 0 0 40px;
+		}
+	}
+}
