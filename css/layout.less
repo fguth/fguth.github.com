@@ -17,10 +17,7 @@ header {
 		text-align:justify;
 		font-weight:200;
 		a {
-			font-weight:bold;
-			text-decoration:none;
 			color:@text-color;
-			.transition(0.50s);	
 			&:hover {color:#000;}
 			&.tw:hover {color:#2299cc;}
 			&.fb:hover {color:#3b5998;}
@@ -65,14 +62,23 @@ section {
 		background: -ms-linear-gradient(-45deg,  rgba(229,229,229,1) 0%,rgba(238,238,238,0) 16%); /* IE10+ */
 		background: linear-gradient(-45deg,  rgba(229,229,229,1) 0%,rgba(238,238,238,0) 16%); /* W3C */
 		.work {
+			float:left;
 			margin:0 0 60px;
-			h2 {
-				margin:10px 0 0;
-				letter-spacing:-1px;
-			}
 			img {
 				.border-radius(5px);
 				.shadow(0, 2px, 2px, 0, #e1e1e1);
+			}
+			h2 {
+				float:left;
+				margin:10px 0 0;
+				letter-spacing:-1px;
+			}
+			a {
+				float:right;
+				margin:15px 0 0;
+				display:none;
+				color:#2c507c;
+				&:hover {color:@text-color;}
 			}
 		}
 	}
