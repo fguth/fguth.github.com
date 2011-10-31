@@ -16,6 +16,17 @@ header {
 		color: @text-color;
 		text-align:justify;
 		font-weight:200;
+		a {
+			font-weight:bold;
+			text-decoration:none;
+			color:@text-color;
+			.transition(0.50s);	
+			&:hover {color:#000;}
+			&.tw:hover {color:#2299cc;}
+			&.fb:hover {color:#3b5998;}
+			&.dr:hover {color:#ea4c88;}
+			&.in:hover {color:#399cc2;}
+		}
 	}
 	.arrow {
 		float:left;
@@ -33,12 +44,13 @@ header {
 		transform: scale(1) rotate(-135deg) translate(0px, 0px) skew(0deg, 0deg);
 	}
 	.arrow:before {
-	    content: '';
-	    position: absolute;
-	    top: 0; right: 0;
-	    border-top: 32px solid transparent;
-	    border-left: 32px solid white;
-	    width: 0;
+	  content: '';
+	  position: absolute;
+	  top: 0; right: 0;
+	  border-top: 32px solid transparent;
+	  border-left: 32px solid white;
+	  width: 0;
+		height:0;
 	}
 }
 section {
