@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'MenschMenschRegular';
+    src: url('../fonts/mensch-webfont.eot');
+    src: url('../fonts/mensch-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mensch-webfont.woff') format('woff'),
+         url('../fonts/mensch-webfont.ttf') format('truetype'),
+         url('../fonts/mensch-webfont.svg#MenschMenschRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MenschMenschThin';
+    src: url('../fonts/mensch-thin-webfont.eot');
+    src: url('../fonts/mensch-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mensch-thin-webfont.woff') format('woff'),
+         url('../fonts/mensch-thin-webfont.ttf') format('truetype'),
+         url('../fonts/mensch-thin-webfont.svg#MenschMenschThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.font(@font-size) {
+	font:@font-size "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+.width-height {
+	width:100%;
+	height:100%;
+}
+.transition(@time) {
+	-webkit-transition: all @time ease;
+	-moz-transition: all @time ease;
+	-o-transition: all @time ease;
+	transition: all @time ease;
+}
+.shadow (@x: 0, @y: 0, @blur: 0, @color: #000000) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+@text-color: #313b43;
+.clear {
+	clear:both;
+}
+h1, h2, h3, h4 {
+	font-family: "MenschMenschRegular";
+}
+h2, h3, h4 {
+	font-size:25px;
+	font-weight:100;
+}
+a {
+	text-decoration:none;
+	font-weight:bold;
+	.transition(0.50s);	
+}
+body {
+	float:left;
+	.width-height;
+	margin:0;
+	background:#f1f1f1 url('../images/fguth-background.png') repeat 0 0;
+	.font(14px);
+	color:@text-color;
+}
