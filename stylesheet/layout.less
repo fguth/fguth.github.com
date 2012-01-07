@@ -63,7 +63,9 @@ section {
 		background: linear-gradient(-45deg,  rgba(229,229,229,1) 0%,rgba(238,238,238,0) 16%);
 		.work {
 			float:left;
-			margin:0 0 60px;
+			padding:40px 0 30px;
+			border-bottom: 1px solid #ddd;
+			border-top: 1px solid #fff;
 			img {
 				width:750px;
 				.border-radius(5px);
@@ -82,6 +84,13 @@ section {
 				.transition(0.15s);
 				&:hover {color:@text-color;}
 			}
+		}
+		.work:first-child {
+			border-top:none;
+			padding-top:0;
+		}
+		.work:last-child {
+			border-bottom:none;
 		}
 	}
 }
