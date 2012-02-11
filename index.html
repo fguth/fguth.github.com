@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
-<html lang="en" >
+<html>
   <head>
     <title>Filipe Guth - Web & iOS Applications designer</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pt-BR" /> 
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="designer, ui design, ux design, ui/ux, user interface, user experience, ui, ux, ios, pixel perfect" />
+    <meta name="keywords" content="designer, ui design, ux design, ui/ux, interface, ios, application, web, ruby on rails, pixel perfect" />
     <meta name="description" content="I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development (html/css/js) for web & iOS applications." />
     
-    <link rel="stylesheet" type="text/css" media="all" href="stylesheet/style.css" />
+    <link rel="stylesheet/less" type="text/css" href="stylesheet/style.less" />
     
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script type="text/javascript" src="javascript/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="javascript/less-1.2.1.min.js"></script>
     <script type="text/javascript" src="javascript/application.js"></script>
 
   </head>
@@ -21,183 +23,47 @@
     
     <!-- About -->
     <header>
-      <h1>Hi,</h1>
-      <p>I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development (html/css/js) for web & iOS applications.<br /><br />I'm also daily involved with Ruby on Rails and agile methodologies. </p>
-      <div id="find-fguth">
-        
-        <ul>
-          <li><a href="http://github.com/fguth" target="_blank" class="gh">Github</a></li>
-          <li><a href="http://facebook.com/fguth" target="_blank" class="fb">Facebook</a></li>
-          <li><a href="http://twitter.com/fguth" target="_blank" class="tw">Twitter</a></li>
-          <li><a href="http://linkedin.com/in/fguth" target="_blank" class="in">LinkedIn</a></li>
-          <li><a href="http://dribbble.com/fguth" target="_blank" class="dr">Dribbble</a></li>
-          <li><a href="mailto:lfguth@gmail.com" class="ma">Email</a></li>
-        </ul>
-        
-        <div class="tipsy gh">Github</div>
-        <div class="tipsy fb">Facebook</div>
-        <div class="tipsy tw">Twitter</div>
-        <div class="tipsy in">LinkedIn</div>
-        <div class="tipsy dr">Dribbble</div>
-        <div class="tipsy ma">Email</div>
-      
-      </div>
+      <h1>Filipe Guth</h1>
+      <p>I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development (html/css/js) for web & iOS applications. I'm also an huge fan of Ruby on Rails, agile methodologies and helvetica ;)</p>
+      <p>I just love to be inside product development environment and help creating awesome stuff. Find me on <a href="http://twitter.com/fguth" target="_blank" title="Follow me" class="tw">Twitter</a>, <a href="http://facebook.com/fguth" target="_blank" title="Add me as friend" class="fb">Facebook</a>, <a href="http://dribbble.com/fguth" target="_blank" title="Check what I'm working on" class="dr">Dribbble</a>, <a href="http://linkedin.com/in/fguth" target="_blank" title="Check my professional profile" class="in">LinkedIn</a> or <a href="mailto:lfguth@gmail.com" title="Email">drop me a message</a>.</p>
       <div class="arrow"></div>
     </header>
     
     <!-- Work -->
     <section>
-      <div id="showreel">
-        
+      <div class="showreel">
         <div class="work">
-          <div class="overlay">
-            <a class="dark" title="Open work"></a>
-          </div>
-          <img src="images/work/2pay.jpg" alt="2Pay" title="2Pay" />
-          <div class="work-info">
-            <div class="content">
-              <h2>2Pay</h2>
-              <ul>
-                <li class="main">UI / UX</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <p>
-                I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development.
-              </p>
-              <br />
-              <a href="http://www.2pay.us" target="_blank" title="2Pay">Visit website</a>
-            </div>
-          </div>
+          <img src="images/2pay.jpg" alt="2Pay" title="2Pay" />
+          <h2>2Pay</h2>
+          <a href="http://www.2pay.us" target="_blank" title="2Pay">Visit website</a>
         </div>
-        <hr />
-        
         <div class="work">
-          <div class="overlay">
-            <a class="soft" title="Open work"></a>
-          </div>
-          <img src="images/work/tedxunisinos.jpg" alt="TEDxUnisinos" title="TEDxUnisinos" />
-          <div class="work-info">
-            <div class="content">
-              <h2>TEDxUnisinos</h2>
-              <ul>
-                <li class="main">UI / UX</li>
-              </ul>
-              <p>
-                I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development.
-              </p>
-              <br />
-              <a href="http://www.tedxunisinos.com.br" target="_blank" title="TEDxUnisinos">Visit website</a>
-            </div>
-          </div>
+          <img src="images/tedxunisinos.jpg" alt="TEDxUnisinos" title="TEDxUnisinos" />
+          <h2>TEDxUnisinos</h2>
+          <a href="http://www.tedxunisinos.com.br" target="_blank" title="TEDxUnisinos">Visit website</a>
         </div>
-        <hr />
-        
         <div class="work">
-          <div class="overlay">
-            <a class="soft" title="Open work"></a>
-          </div>
-          <img src="images/work/git.jpg" alt="Git Sistemas" title="Git Sistemas" />
-          <div class="work-info">
-            <div class="content">
-              <h2>Git Sistemas</h2>
-              <ul>
-                <li class="main">UI / UX</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-              </ul>
-              <p>
-                I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development.
-              </p>
-              <br />
-              <a href="http://git.com.br" target="_blank" title="Git Sistemas">Visit website</a>
-            </div>
-          </div>
+          <img src="images/pmtotal.jpg" alt="PMtotal" title="PMtotal" />
+          <h2>PMtotal</h2>
+          <a href="http://pmtotal.com.br" target="_blank" title="PMtotal">Visit website</a>
         </div>
-        <hr />
-        
         <div class="work">
-          <div class="overlay">
-            <a class="dark" title="Open work"></a>
-          </div>
-          <img src="images/work/pmtotal.jpg" alt="PMtotal" title="PMtotal" />
-          <div class="work-info">
-            <div class="content">
-              <h2>PMtotal</h2>
-              <ul>
-                <li class="main">UI / UX</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <p>
-                I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development.
-              </p>
-              <br />
-              <a href="http://pmtotal.com.br" target="_blank" title="PMtotal">Visit website</a>
-            </div>
-          </div>
+          <img src="images/renovacao-de-cnh.jpg" alt="Renovação.de/cnh" title="Renovação.de/cnh" />
+          <h2>Renovacao.de/cnh</h2>
+          <a href="http://renovacao.de/cnh" target="_blank" title="Renovação.de/cnh">Visit website</a>
         </div>
-        <hr />
-        
         <div class="work">
-          <div class="overlay">
-            <a class="dark" title="Open work"></a>
-          </div>
-          <img src="images/work/renovacao-de-cnh.jpg" alt="Renovação.de/cnh" title="Renovação.de/cnh" />
-          <div class="work-info">
-            <div class="content">
-              <h2>Renovacao.de/cnh</h2>
-              <ul>
-                <li class="main">UI / UX</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <p>
-                I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development.
-              </p>
-              <br />
-              <a href="http://renovacao.de/cnh" target="_blank" title="Renovação.de/cnh">Visit website</a>
-            </div>
-          </div>
+          <img src="images/git.jpg" alt="Git Sistemas" title="Git Sistemas" />
+          <h2>Git Sistemas</h2>
+          <a href="http://git.com.br" target="_blank" title="Git Sistemas">Visit website</a>
         </div>
-        <hr />
-        
         <div class="work">
-          <div class="overlay">
-            <a class="soft" title="Open work"></a>
-          </div>
-          <img src="images/work/paypal-instant-checkout.jpg" alt="PayPal Instant Checkout" title="PayPal Instant Checkout" />
-          <div class="work-info">
-            <div class="content">
-              <h2>PayPal Instant Checkout</h2>
-              <ul>
-                <li class="main">UI / UX</li>
-              </ul>
-              <p>
-                I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development.
-              </p>
-            </div>
-          </div>
+          <img src="images/paypal-instant-checkout.jpg" alt="PayPal Instant Checkout" title="PayPal Instant Checkout" />
+          <h2>PayPal Instant Checkout</h2>
         </div>
-        <hr />
-        
         <div class="work">
-          <div class="overlay">
-            <a class="soft" title="Open work"></a>
-          </div>
-          <img src="images/work/agora.jpg" alt="Ágora" title="Ágora" />
-          <div class="work-info">
-            <div class="content">
-              <h2>Ágora</h2>
-              <ul>
-                <li class="main">UI / UX</li>
-              </ul>
-              <p>
-                I'm a 20-year-old designer living in Brazil. My mainly skills go through UI/UX design and front-end development.
-              </p>
-            </div>
-          </div>
+          <img src="images/agora.jpg" alt="Ágora" title="Ágora" />
+          <h2>Agora</h2>
         </div>
       </div>
     </section>
