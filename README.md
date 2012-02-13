@@ -1,4 +1,4 @@
-Filipe Guth
-==========
+Filipe Guth Website
+===================
 
-Filipe Guth is a 20-year-old designer living in Brazil.
+Work still in progress. There's a lot of things to-do related to work content.
