@@ -1,3 +1,4 @@
+<<<<<<< HEAD:stylesheet/structure.less
 @font-face {
     font-family: 'MenschMenschRegular';
     src: url('../fonts/mensch-webfont.eot');
@@ -18,6 +19,8 @@
     font-weight: normal;
     font-style: normal;
 }
+=======
+>>>>>>> development:assets/stylesheet/structure.less
 .font(@font-size) {
 	font:@font-size "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
@@ -41,6 +44,7 @@
 	-moz-border-radius: @radius;
 	border-radius: @radius;
 }
+<<<<<<< HEAD:stylesheet/structure.less
 @text-color: #313b43;
 .clear {
 	clear:both;
@@ -51,11 +55,45 @@ h1, h2, h3, h4 {
 h2, h3, h4 {
 	font-size:25px;
 	font-weight:100;
+=======
+@color-light: #aaaeb1;
+@color-soft: #666;
+@color-dark: #4d4f58;
+
+body {
+	.width-height;
+	margin:0;
+	background:#fff;
+	.font(14px);
+	-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+	font-weight:100;
+	font-size:44px;
+	color:@color-dark;
+	font-weight:400;
+	text-transform:lowercase;
+	letter-spacing:-2px;
+}
+p {
+	line-height:24px;
+	letter-spacing:-0.031em;
+	font-weight:200;
+	font-size:14px;
+	color:@color-soft;
+>>>>>>> development:assets/stylesheet/structure.less
 }
 a {
 	text-decoration:none;
-	font-weight:bold;
-	.transition(0.50s);	
+	font-weight:100;
+	text-transform:lowercase;
+	letter-spacing:-1px;
+	color:@color-light;
+	.transition(0.7s);
+	&:hover {
+		color:#bc4945;
+		.transition(0.3s);
+	}
 }
 body {
 	float:left;

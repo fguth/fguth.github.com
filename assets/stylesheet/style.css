@@ -1,0 +1,49 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;}
+article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}
+nav ul{list-style:none;}
+ol{list-style:decimal;}
+ul{list-style:disc;}
+ul ul{list-style:circle;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+ins{text-decoration:underline;}
+del{text-decoration:line-through;}
+mark{background:none;}
+abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}
+table{border-collapse:collapse;border-spacing:0;}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+input,select,a img{vertical-align:middle;}
+.width-height{width:100%;height:100%;}
+.no-transition{-webkit-transition:none;-moz-transition:none;-o-transition:none;transition:none;}
+body{width:100%;height:100%;margin:0;background:#fff;font:14px "Helvetica Neue",Helvetica,Arial,Sans-serif;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-weight:100;font-size:44px;color:#4d4f58;font-weight:400;text-transform:lowercase;letter-spacing:-2px;}
+p{line-height:24px;letter-spacing:-0.031em;font-weight:200;font-size:14px;color:#666666;}
+a{text-decoration:none;font-weight:100;text-transform:lowercase;letter-spacing:-1px;color:#aaaeb1;-webkit-transition:all 0.7s ease;-moz-transition:all 0.7s ease;-o-transition:all 0.7s ease;transition:all 0.7s ease;}a:hover{color:#bc4945;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}
+ul li{display:block;}
+body{width:100%;height:100%;margin:0;background:#fff;font:14px "Helvetica Neue",Helvetica,Arial,Sans-serif;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-weight:100;font-size:44px;color:#4d4f58;font-weight:400;text-transform:lowercase;letter-spacing:-2px;}
+p{line-height:24px;letter-spacing:-0.031em;font-weight:200;font-size:14px;color:#666666;}
+a{text-decoration:none;font-weight:400;text-transform:lowercase;letter-spacing:-1px;color:#aaaeb1;-webkit-transition:all 0.7s ease;-moz-transition:all 0.7s ease;-o-transition:all 0.7s ease;transition:all 0.7s ease;}a:hover{color:#bc4945;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}
+ul li{display:block;}
+#page{width:1000px;margin:0 auto;}#page header{position:fixed;width:198px;height:100%;padding:60px 50px 40px 0;background:#fff;z-index:15;}#page header h1{line-height:30px;margin:0 0 60px;}
+#page header p{margin:0 0 55px;}
+#page header ul,#page header ul li a{float:left;}
+#page header ul li a{line-height:40px;font-size:26px;}
+#page section,#page section hr,#page section #showreel,#page section #showreel .work,#page section #showreel .work .overlay,#page section #showreel .work .work-info .content,#page section #showreel .work .work-info .content h2,#page section #showreel .work .work-info .content ul,#page section #showreel .work .work-info .content ul li{float:left;}
+#page section #showreel .work .work-info .content h2,#page section #showreel .work .work-info .content ul{width:100%;}
+#page section #showreel,#page section #showreel hr,#page section #showreel .work,#page section #showreel .work .overlay{width:750px;}
+#page section{width:750px;margin:0 0 0 250px;}#page section #showreel{padding:60px 0 60px 0;}#page section #showreel .work{height:380px;z-index:20;}#page section #showreel .work img{position:relative;z-index:10;border:1px solid #e4e4e4;}
+#page section #showreel .work .overlay,#page section #showreel .work .work-info span{position:absolute;}
+#page section #showreel .work img,#page section #showreel .work .overlay,#page section #showreel .work .work-info,#page section #showreel .work .work-info a{-webkit-transition:all 0.25s ease;-moz-transition:all 0.25s ease;-o-transition:all 0.25s ease;transition:all 0.25s ease;}
+#page section #showreel .work .overlay{width:738px;height:368px;z-index:11;border:6px solid transparent;cursor:pointer;}#page section #showreel .work .overlay a{float:right;width:0;height:90px;background:#ffffff url(../images/ui-sprites.png) no-repeat 0 0;margin:139px -6px 0 0;-webkit-transition:all 0.35s Ease-Out;-moz-transition:all 0.35s Ease-Out;-o-transition:all 0.35s Ease-Out;transition:all 0.35s Ease-Out;-moz-border-radius-topleft:5px;-moz-border-radius-topright:0px;-moz-border-radius-bottomright:0px;-moz-border-radius-bottomleft:5px;-webkit-border-radius:5px 0px 0px 5px;border-radius:5px 0px 0px 5px;-webkit-box-shadow:-1px 0px 2px 0px rgba(0, 0, 0, 0.2);-moz-box-shadow:-1px 0px 2px 0px rgba(0, 0, 0, 0.2);box-shadow:-1px 0px 2px 0px rgba(0, 0, 0, 0.2);}#page section #showreel .work .overlay a:hover{-webkit-transition:all 0.1s ease;-moz-transition:all 0.1s ease;-o-transition:all 0.1s ease;transition:all 0.1s ease;}
+#page section #showreel .work .overlay a.soft:active{-webkit-box-shadow:inset 2px 0px 2px 0px rgba(0, 0, 0, 0.3);-moz-box-shadow:inset 2px 0px 2px 0px rgba(0, 0, 0, 0.3);box-shadow:inset 2px 0px 2px 0px rgba(0, 0, 0, 0.3);}
+#page section #showreel .work .overlay a.dark:active{-webkit-box-shadow:inset 2px 0px 2px 0px rgba(0, 0, 0, 0.6);-moz-box-shadow:inset 2px 0px 2px 0px rgba(0, 0, 0, 0.6);box-shadow:inset 2px 0px 2px 0px rgba(0, 0, 0, 0.6);}
+#page section #showreel .work .work-info{float:right;position:relative;z-index:5;width:250px;height:380px;margin:-380px 0 0 100px;padding:0 20px;bottom:0;}#page section #showreel .work .work-info .content{bottom:0;position:absolute;}
+#page section #showreel .work .work-info .content ul{margin:13px 0 10px;}#page section #showreel .work .work-info .content ul li{padding:1px 6px;background:#ccc;font-size:10px;color:#fff;line-height:auto;margin:0 2px 0 0;font-weight:bold;text-shadow:0px 1px 0px #a35c23;filter:dropshadow(color=#a35c23, offx=0, offy=1);box-shadow:0 1px 2px 0 #cccccc;-moz-box-shadow:0 1px 2px 0 #cccccc;-webkit-box-shadow:0 1px 2px 0 #cccccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#e6873b;background:-moz-linear-gradient(top, #e6873b 0%, #d7792e 99%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #e6873b), color-stop(99%, #d7792e));background:-webkit-linear-gradient(top, #e6873b 0%, #d7792e 99%);background:-o-linear-gradient(top, #e6873b 0%, #d7792e 99%);background:-ms-linear-gradient(top, #e6873b 0%, #d7792e 99%);background:linear-gradient(top, #e6873b 0%, #d7792e 99%);filter:progid:dximagetransform.microsoft.gradient(startColorstr='#e6873b', endColorstr='#d7792e', GradientType=0);}
+#page section #showreel .work .work-info .content ul li.main{text-shadow:0px 1px 0px #743807;filter:dropshadow(color=#743807, offx=0, offy=1);background:#ae560f;background:-moz-linear-gradient(top, #ae560f 0%, #98490a 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ae560f), color-stop(100%, #98490a));background:-webkit-linear-gradient(top, #ae560f 0%, #98490a 100%);background:-o-linear-gradient(top, #ae560f 0%, #98490a 100%);background:-ms-linear-gradient(top, #ae560f 0%, #98490a 100%);background:linear-gradient(top, #ae560f 0%, #98490a 100%);filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ae560f', endColorstr='#98490a', GradientType=0);}
+#page section #showreel .work .work-info .content a:hover{text-decoration:underline;}
+#page section #showreel .work:hover .overlay{border:6px solid rgba(255, 255, 255, 0.3);box-shadow:0 0 5px 0 #cccccc;-moz-box-shadow:0 0 5px 0 #cccccc;-webkit-box-shadow:0 0 5px 0 #cccccc;}#page section #showreel .work:hover .overlay a{opacity:1;width:40px;margin:139px -6px 0 0;}
+#page section #showreel .opened img,#page section #showreel .opened .overlay{margin-left:-290px;}
+#page section #showreel .opened .overlay a{background-position:-40px 0;}
+#page section #showreel hr{border:none;margin:0;float:left;height:32px;}
