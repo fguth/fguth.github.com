@@ -69,60 +69,14 @@ ul li { display:block; }
 	section,
 	section hr,
 	section #showreel,
-	section #showreel .work,
-	section #showreel .work .more { float:left; width:750px; }
+	section #showreel .work { float:left; width:750px; }
 	section {
 		margin:0 0 0 250px;
 		#showreel {
 			padding:60px 0 60px 0;
 			.work {
-				.more {
-				  position:absolute;
-				  z-index:20;
-				  height:60px;
-				  margin:320px 0 0;
-				  .details {
-				    float:right;
-				    height:60px;
-				    width:0;
-				    .transition(0.25s);
-				    background:rgba(0,0,0,.6);
-				    color:#fff;
-				    h3, p {
-				      display:none;
-				    }
-				  }
-				  .visible {
-				    width:367px;
-				    padding:0 0 0 20px;
-				    margin:0 0 0 1px;
-				    .transition(0.45s);
-				    h3 {
-				      font-size:30px;
-				      color:#fff;
-				      line-height:60px;
-				      display:block;
-				    }
-				  }
-				  a {
-				    float:right;
-				    width:60px;
-				    height:60px;
-				    background:rgba(0,0,0,.2);
-				    cursor:pointer;
-				    font-size:50px;
-				    line-height:49px;
-				    text-align:center;
-				    color:rgba(255,255,255,.3);
-				    font-weight:100;
-				    &:hover {
-				      background:rgba(0,0,0,0.4);
-				      color:rgba(255,255,255,1);
-				    }
-				  }
-				}
+				height:380px;
 				img {
-				  z-index:10;
 					position:relative;
 					border:1px solid #e4e4e4;
 				}

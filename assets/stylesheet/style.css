@@ -28,9 +28,6 @@ ul li{display:block;}
 #page header p{margin:0 0 55px;}
 #page header ul,#page header ul li a{float:left;}
 #page header ul li a{line-height:40px;font-size:26px;}
-#page section,#page section hr,#page section #showreel,#page section #showreel .work,#page section #showreel .work .more{float:left;width:750px;}
-#page section{margin:0 0 0 250px;}#page section #showreel{padding:60px 0 60px 0;}#page section #showreel .work .more{position:absolute;z-index:20;height:60px;margin:320px 0 0;}#page section #showreel .work .more .details{float:right;height:60px;width:0;-webkit-transition:all 0.25s ease;-moz-transition:all 0.25s ease;-o-transition:all 0.25s ease;transition:all 0.25s ease;background:rgba(0, 0, 0, 0.6);color:#fff;}#page section #showreel .work .more .details h3,#page section #showreel .work .more .details p{display:none;}
-#page section #showreel .work .more .visible{width:367px;padding:0 0 0 20px;margin:0 0 0 1px;-webkit-transition:all 0.45s ease;-moz-transition:all 0.45s ease;-o-transition:all 0.45s ease;transition:all 0.45s ease;}#page section #showreel .work .more .visible h3{font-size:30px;color:#fff;line-height:60px;display:block;}
-#page section #showreel .work .more a{float:right;width:60px;height:60px;background:rgba(0, 0, 0, 0.2);cursor:pointer;font-size:50px;line-height:49px;text-align:center;color:rgba(255, 255, 255, 0.3);font-weight:100;}#page section #showreel .work .more a:hover{background:rgba(0, 0, 0, 0.4);color:#ffffff;}
-#page section #showreel .work img{z-index:10;position:relative;border:1px solid #e4e4e4;}
+#page section,#page section hr,#page section #showreel,#page section #showreel .work{float:left;width:750px;}
+#page section{margin:0 0 0 250px;}#page section #showreel{padding:60px 0 60px 0;}#page section #showreel .work{height:380px;}#page section #showreel .work img{position:relative;border:1px solid #e4e4e4;}
 #page section #showreel hr{border:none;margin:0;float:left;height:32px;}

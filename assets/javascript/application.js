@@ -4,7 +4,8 @@ $(function() {
       $(this).prevAll('.details').removeClass('visible');
     }
     else {
-      $(this).prevAll('.details').addClass('visible');
+      $(this).prevAll('.details').addClass('visible');  
     }
   });
-});
+-});
+
