@@ -1,15 +1,10 @@
 $(function() {
-	$('.work').mouseover(function() {
-  	$(this).find('a').show();
-	});
-<<<<<<< HEAD:javascript/application.js
-	$('.work').mouseout(function() {
-  	$(this).find('a').hide();
-	});
+  $('.more a').click(function(){
+    if($(this).prevAll('.details').hasClass('visible')) {
+      $(this).prevAll('.details').removeClass('visible');
+    }
+    else {
+      $(this).prevAll('.details').addClass('visible');
+    }
+  });
 });
-=======
-	$('#find-fguth ul li a').hover(function(){ 
-		$('div.tipsy.' + $(this).attr('class')).toggleClass('hover');
-	});
-});
->>>>>>> development:assets/javascript/application.js
