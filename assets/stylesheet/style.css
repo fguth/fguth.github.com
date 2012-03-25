@@ -20,7 +20,7 @@ h1,h2,h3,h4{font-weight:100;font-size:44px;color:#4d4f58;font-weight:400;text-tr
 p{line-height:24px;letter-spacing:-0.031em;font-weight:200;font-size:14px;color:#444444;}
 a{text-decoration:none;font-weight:100;text-transform:lowercase;letter-spacing:-1px;color:#aaaeb1;-webkit-transition:all 0.7s ease;-moz-transition:all 0.7s ease;-o-transition:all 0.7s ease;transition:all 0.7s ease;}a:hover{color:#bc4945;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}
 body{width:100%;height:100%;margin:0;background:#fff;font:14px "Helvetica Neue",Helvetica,Arial,Sans-serif;-webkit-font-smoothing:antialiased;}
-h1,h2,h3,h4{font-weight:100;font-size:44px;color:#4d4f58;font-weight:400;text-transform:lowercase;letter-spacing:-2px;}
+h1,h2,h3,h4{font-size:44px;color:#4d4f58;font-weight:400;text-transform:lowercase;letter-spacing:-2px;}
 p{line-height:24px;letter-spacing:-0.031em;font-weight:200;font-size:14px;color:#444444;}
 a{text-decoration:none;font-weight:400;text-transform:lowercase;letter-spacing:-1px;color:#aaaeb1;-webkit-transition:all 0.7s ease;-moz-transition:all 0.7s ease;-o-transition:all 0.7s ease;transition:all 0.7s ease;}a:hover{color:#bc4945;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}
 ul li{display:block;}
