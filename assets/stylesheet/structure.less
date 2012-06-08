@@ -1,30 +1,32 @@
+// Mixins and Variables
+//---------------------------------------------------------------
 .font(@font-size) {
 	font:@font-size "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
+
 .width-height {
 	width:100%;
 	height:100%;
 }
+
 .transition(@time) {
 	-webkit-transition: all @time ease;
 	-moz-transition: all @time ease;
 	-o-transition: all @time ease;
 	transition: all @time ease;
 }
-.shadow (@x: 0, @y: 0, @blur: 0, @color: #000000) {
-  box-shadow: @arguments;
-  -moz-box-shadow: @arguments;
-  -webkit-box-shadow: @arguments;
-}
-.border-radius(@radius) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	border-radius: @radius;
-}
+
 @color-light: #aaaeb1;
 @color-soft: #444;
 @color-dark: #4d4f58;
 
+// Media Querie for Mobile Layout
+//---------------------------------------------------------------
+@mobile: ~"screen and (min-width: 320px) and (max-width: 790px)";
+
+
+// Basic Layout
+//---------------------------------------------------------------
 body {
 	.width-height;
 	margin:0;
@@ -32,30 +34,35 @@ body {
 	.font(14px);
 	-webkit-font-smoothing: antialiased;
 }
+
 h1, h2, h3, h4 {
-	font-weight:100;
-	font-size:44px;
-	color:@color-dark;
-	font-weight:400;
-	text-transform:lowercase;
-	letter-spacing:-2px;
+	font-size: 44px;
+	color: @color-dark;
+	font-weight: 400;
+	text-transform: lowercase;
+	letter-spacing: -2px;
 }
+
 p {
-	line-height:24px;
-	letter-spacing:-0.031em;
-	font-weight:200;
-	font-size:14px;
-	color:@color-soft;
+	line-height: 24px;
+	letter-spacing: -0.031em;
+	font-weight: 200;
+	font-size: 14px;
+	color: @color-soft;
 }
+
 a {
-	text-decoration:none;
-	font-weight:100;
-	text-transform:lowercase;
-	letter-spacing:-1px;
-	color:@color-light;
+	text-decoration: none;
+	font-weight: 400;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+	color: @color-light;
 	.transition(0.7s);
+
 	&:hover {
-		color:#bc4945;
+		color: #bc4945;
 		.transition(0.3s);
 	}
 }
+
+ul li { display: block; }
