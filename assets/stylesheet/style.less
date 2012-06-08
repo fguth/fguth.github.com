@@ -3,78 +3,92 @@
 
 body {
 	.width-height;
-	margin:0;
-	background:#fff;
+	margin: 0;
+	background: #fff;
 	.font(14px);
 	-webkit-font-smoothing: antialiased;
 }
+
 h1, h2, h3, h4 {
-	font-size:44px;
-	color:@color-dark;
-	font-weight:400;
-	text-transform:lowercase;
-	letter-spacing:-2px;
+	font-size: 44px;
+	color: @color-dark;
+	font-weight: 400;
+	text-transform: lowercase;
+	letter-spacing: -2px;
 }
+
 p {
-	line-height:24px;
-	letter-spacing:-0.031em;
-	font-weight:200;
-	font-size:14px;
-	color:@color-soft;
+	line-height: 24px;
+	letter-spacing: -0.031em;
+	font-weight: 200;
+	font-size: 14px;
+	color: @color-soft;
 }
+
 a {
-	text-decoration:none;
-	font-weight:400;
-	text-transform:lowercase;
-	letter-spacing:-1px;
-	color:@color-light;
+	text-decoration: none;
+	font-weight: 400;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+	color: @color-light;
 	.transition(0.7s);
+
 	&:hover {
-		color:#bc4945;
+		color: #bc4945;
 		.transition(0.3s);
 	}
 }
-ul li { display:block; }
+
+ul li { display: block; }
 
 //Front style
 #page {
-	width:1000px;
-	margin:0 auto;
+	width: 1000px;
+	margin: 0 auto;
+
 	header {
-		position:fixed;
-		width:198px;
-		height:100%;
-		padding:60px 50px 40px 0;
-		background:#fff;
-		z-index:15;
+		position: fixed;
+		width: 198px;
+		height: 100%;
+		padding: 60px 50px 40px 0;
+		background: #fff;
+		z-index: 15;
+
 		h1 {
-			line-height:30px;
-			margin:0 0 60px;
+			line-height: 30px;
+			margin: 0 0 60px;
 		}
+
 		p {
-			margin:0 0 55px;
+			margin: 0 0 55px;
 		}
-		ul, ul li a { float:left; }
+
+		ul, ul li a { float: left; }
+
 		ul {
 			li {
 				a {
-					line-height:40px;
-					font-size:26px;
+					line-height: 40px;
+					font-size: 26px;
 				}
 			}
 		}
 	}
+
 	section,
 	section hr,
-	section #work { float:left; width:750px; }
+	section #work { float: left; width: 750px; }
+
 	section {
-		margin:0 0 0 250px;
+		margin: 0 0 0 250px;
+
 		#work {
-			padding:60px 0 28px 0;
+			padding: 60px 0 28px 0;
+
 				img {
-				  margin:0 0 32px;
-					position:relative;
-					border:1px solid #e4e4e4;
+				  margin: 0 0 32px;
+					position: relative;
+					border: 1px solid #e4e4e4;
 				}
 			}
 		}
