@@ -1,14 +1,5 @@
 // Mixins and Variables
 //---------------------------------------------------------------
-.font(@font-size) {
-	font:@font-size "Helvetica Neue", Helvetica, Arial, Sans-serif;
-}
-
-.width-height {
-	width:100%;
-	height:100%;
-}
-
 .transition(@time) {
 	-webkit-transition: all @time ease;
 	-moz-transition: all @time ease;
@@ -27,25 +18,30 @@
 
 // Basic Layout
 //---------------------------------------------------------------
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	.width-height;
-	margin:0;
+	width:100%;
 	background:#fff;
-	.font(14px);
+	font:14px "Helvetica", Arial, Helvetica Neue, Sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
 	font-size: 44px;
 	color: @color-dark;
-	font-weight: 400;
+	font-weight: bold;
 	text-transform: lowercase;
-	letter-spacing: -2px;
+	letter-spacing: -0.06em;
 }
 
 p {
 	line-height: 24px;
-	letter-spacing: -0.031em;
+	letter-spacing: -0.02em;
 	font-weight: 200;
 	font-size: 14px;
 	color: @color-soft;
@@ -53,9 +49,9 @@ p {
 
 a {
 	text-decoration: none;
-	font-weight: 400;
+	font-weight: bold;
 	text-transform: lowercase;
-	letter-spacing: -1px;
+	letter-spacing: -0.06em;
 	color: @color-light;
 	.transition(0.7s);
 
