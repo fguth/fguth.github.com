@@ -1,0 +1,35 @@
+@import "structure";
+
+h1 {
+	width: 600px;
+	margin: 40px auto 80px;
+	text-align: center;
+	color: #1D211D;
+}
+
+.chess {
+	display: block;
+	width: 600px;
+	margin: 0 auto;
+
+	li {
+		float: left;
+		width: 200px;
+		height: 200px;
+		text-indent: -9999px;
+		background: url(../images/chess-svg.svg) no-repeat;
+
+		&.horse { background-position: 0 0; }
+		&.king { background-position: -200px 0; }
+		&.queen { background-position: -400px 0; }
+	}
+}
+
+p {
+	width: 100%;
+	margin: 80px auto 0;
+	display: inline-block;
+	color: #1D211D;
+	font-size: 18px;
+	text-align: center;
+}

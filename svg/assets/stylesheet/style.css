@@ -1,0 +1,10 @@
+*{margin:0;padding:0;}
+body{width:100%;background:#DCF1E2;font:14px "Helvetica",Arial,Helvetica Neue,Sans-serif;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-size:44px;font-weight:bold;letter-spacing:-0.06em;font-family:'Quando',Georgia,serif;font-weight:200;}
+p{line-height:24px;letter-spacing:-0.02em;font-weight:200;}
+a{text-decoration:none;font-weight:bold;text-transform:lowercase;letter-spacing:-0.06em;-webkit-transition:all 0.7s ease;-moz-transition:all 0.7s ease;-o-transition:all 0.7s ease;transition:all 0.7s ease;color:#8F3D36;}a:hover{color:#1D211D;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}
+h1{width:600px;margin:40px auto 80px;text-align:center;color:#1D211D;}
+.chess{display:block;width:600px;margin:0 auto;}.chess li{float:left;width:200px;height:200px;text-indent:-9999px;background:url(../images/chess-svg.svg) no-repeat;}.chess li.horse{background-position:0 0;}
+.chess li.king{background-position:-200px 0;}
+.chess li.queen{background-position:-400px 0;}
+p{width:100%;margin:80px auto 0;display:inline-block;color:#1D211D;font-size:18px;text-align:center;}
