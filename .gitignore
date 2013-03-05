@@ -16,3 +16,5 @@
 
 .DS_Store
 thumbs.db
+
+assets/css/.sass-cache/*
