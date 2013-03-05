@@ -84,7 +84,7 @@ a {
 header {
   position: absolute;
   top: 50%;
-  margin-top: -130px;
+  margin-top: -132px;
   left: 10%;
   width: 300px;
   -webkit-box-sizing: border-box;
@@ -93,7 +93,7 @@ header {
   header h1 {
     margin: 0 0 24px; }
   header .social-links {
-    margin: 22px 0 0; }
+    margin: 26px 0 0; }
 
 .social-links li a {
   float: left;
