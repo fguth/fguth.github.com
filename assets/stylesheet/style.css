@@ -82,7 +82,7 @@ a {
     transition: all 0.15s ease-out; }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 50%;
   margin-top: -132px;
   left: 10%;
@@ -122,3 +122,12 @@ header {
       background: #008fd5; }
     .social-links li a:hover.email {
       background: #d14836; }
+
+.work {
+  float: right !important;
+  margin: 200px 10% 0 0;
+  width: 750px;
+  padding: 60px 0 0; }
+  .work img {
+    float: left;
+    margin-bottom: 60px; }

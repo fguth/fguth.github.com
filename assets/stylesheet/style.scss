@@ -44,7 +44,7 @@ a {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 50%;
   margin-top: -132px;
   left: 10%;
@@ -79,5 +79,17 @@ header {
         &.email     { background: $email;    }
       }
     }
+  }
+}
+
+.work {
+  float: right !important;
+  margin: 200px 10% 0 0;
+  width: 750px;
+  padding: 60px 0 0;
+
+  img {
+    float: left;
+    margin-bottom: 60px;
   }
 }
