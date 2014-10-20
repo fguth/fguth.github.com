@@ -10,14 +10,12 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: asset-url('../fonts/proxima-nova/proxima-regular.eot');
-  src: asset-url('../fonts/proxima-nova/proxima-regular.eot?#iefix') format('embedded-opentype'),
-       asset-url('../fonts/proxima-nova/proxima-regular.woff') format('woff'),
-       asset-url('../fonts/proxima-nova/proxima-regular.ttf') format('truetype'),
-       asset-url('../fonts/proxima-nova/proxima-regular.svg#proxima_nova_rgregular') format('svg');
+  font-family: 'CooperHewitt-Medium';
+  src: asset-url('../fonts/cooper-hewitt/CooperHewitt-Medium.eot'),
+       asset-url('../fonts/cooper-hewitt/CooperHewitt-Medium.woff') format('woff'),
+       asset-url('../fonts/cooper-hewitt/CooperHewitt-Medium.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-$proxima: 'Proxima Nova', sans-serif;
+$cooper: 'CooperHewitt-Medium', sans-serif;
