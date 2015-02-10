@@ -170,5 +170,35 @@ footer {
     font-family: 'BentonSans-Light', sans-serif;
     text-transform: uppercase; }
 
+@media only screen and (max-width : 414px) {
+  /* line 116, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  header {
+    width: 270px;
+    height: 152px;
+    top: 50%;
+    margin: -76px auto 0; }
+    /* line 122, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+    header svg {
+      width: 270px;
+      height: 152px; }
+
+  /* line 130, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  article h1 {
+    font-size: 60px;
+    letter-spacing: -4px;
+    line-height: 80px; }
+  /* line 136, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  article h2 {
+    padding: 0 20px; }
+  /* line 137, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  article img {
+    width: 80%; }
+
+  /* line 143, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  footer h4, footer h4 a {
+    display: block;
+    padding: 30px 0;
+    width: 100%; }
+ }
 
 /*# sourceMappingURL=style.css.map */
