@@ -135,33 +135,34 @@ article {
     letter-spacing: 5px;
     color: #aaa;
     font-family: 'BentonSans-Light', sans-serif;
+    line-height: 22px;
     text-transform: uppercase; }
-  /* line 80, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  /* line 81, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
   article .work-space {
     display: block;
     width: 100px;
     height: 6px;
     background: #eaeaea;
     margin: 50px auto; }
-  /* line 88, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  /* line 89, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
   article img {
     width: 80%; }
 
-/* line 91, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+/* line 92, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
 .contact {
   margin: 100px 0; }
 
-/* line 93, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+/* line 94, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
 footer {
   text-align: center; }
-  /* line 96, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  /* line 97, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
   footer h3, footer h3 a {
     color: #aaa;
     font-size: 24px;
     letter-spacing: -1px;
     font-family: 'BentonSans-Black', sans-serif;
     line-height: 56px; }
-  /* line 104, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
+  /* line 105, /Users/Filipe/Projects/Filipe Guth/assets/stylesheet/style.scss */
   footer h4, footer h4 a {
     font-size: 14px;
     letter-spacing: 4px;
