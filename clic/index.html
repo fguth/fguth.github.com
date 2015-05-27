@@ -5,7 +5,9 @@
 	<title>Protótipo Clic</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
+	
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	
 	<link rel="stylesheet" href="style/main.css">
 </head>
 
@@ -15,12 +17,18 @@
 		<img src="images/menu.png" alt="">
 	</a>
 	
-	<div class="navigator">
-		<img src="images/navigator.png" alt="">
+	<ul class="navigator">
+		<li><a href="javascript:;" data-top="1560">Esportes</a></li>
+		<li><a href="javascript:;" data-top="3430">Entretenimento</a></li>
+		<li><a href="javascript:;" data-top="2050">Lifestyle</a></li>
+		<li><a href="javascript:;" data-top="3050">Humor</a></li>
+	</ul>
+
+	<div class="wrapper">
+		<div class="content">
+			<img src="images/base.jpg" alt="Imagem">
+		</div>
 	</div>
-
-	<img src="images/base.jpg" alt="Imagem">
-
 	<script>
 		!function() {
 			'use strict';
@@ -50,6 +58,20 @@
 				navigator = document.querySelector(navigator);
 				
 				check();
+				
+				$('.navigator a').on('click', function () {
+					var el = $(this);
+					$('.content').addClass('transit');
+					
+					$('.content').on('webkitTransitionEnd transitionend oTransitionEnd otransitionend', function () {
+						window.scrollTo(0, el.data('top'));
+						$('.content').removeClass('transit');
+					});	
+					
+					
+				});
+				
+				
 			};
 
 			document.addEventListener('DOMContentLoaded', main);
