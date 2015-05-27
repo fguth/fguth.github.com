@@ -9,7 +9,7 @@ a, button {
 body {
 	float: left;
 	width: 100%;
-	height: 4500px;
+	height: 6600px;
 	max-width: 414px;
 	margin: 0;
 	padding: 0;
@@ -29,11 +29,11 @@ body {
 
 .wrapper {
 	display: block;
-	height: 4500px;
+	height: 6600px;
 }
 
 .content {
-	height: 4500px;
+	height: 6600px;
 	
 	&:before {
 		position: fixed;
@@ -53,12 +53,12 @@ body {
 	
 	&.transit:before {
 		opacity: 1;
-		-webkit-transition: opacity .1s; /* Changed here */ 
-          transition: opacity .1s;
+		-webkit-transition: opacity .3s; /* Changed here */ 
+          transition: opacity .3s;
 	}
 	
 	img {
-		height: 4500px;
+		height: 6600px;
 	}
 }
 
