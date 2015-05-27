@@ -19,11 +19,15 @@ body {
 .navigator {
 	position: fixed;
 	bottom: 0;
-	transform: translateY(100%);
-	transition: transform 0.2s;
+	
+	 -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.2s; /* Changed here */ 
+          transition: transform 0.2s;
 
 	&.active {
-		transform: translateY(0);
+	 -webkit-transform: translateY(0);
+          transform: translateY(0);
 	}
 }
 

@@ -37,8 +37,6 @@
 				if (memory != state) {
 					memory = state;
 
-					console.log(state);
-					
 					if (state) {
 						navigator.classList.add('active');
 					} else {
@@ -49,7 +47,7 @@
 
 			var main = function() {
 				navigator = document.querySelector(navigator);
-
+				
 				check();
 			};
 
