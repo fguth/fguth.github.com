@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Protótipo Clic</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+	
+	<a href="" class="menu">
+		<img src="images/menu.png" alt="">
+	</a>
+	
+	<div class="navigator">
+		<img src="images/navigator.png" alt="">
+	</div>
+
+	<img src="images/base.jpg" alt="Imagem">
+
+	<script>
+		!function() {
+			'use strict';
+
+			var memory = false;
+			var navigator = '.navigator';
+			var state = false;
+
+			var check = function() {
+				requestAnimationFrame(check);
+
+				state = window.scrollY > 100;
+
+				if (memory != state) {
+					memory = state;
+
+					console.log(state);
+					
+					if (state) {
+						navigator.classList.add('active');
+					} else {
+						navigator.classList.remove('active');
+					}
+				}
+			};
+
+			var main = function() {
+				navigator = document.querySelector(navigator);
+
+				check();
+			};
+
+			document.addEventListener('DOMContentLoaded', main);
+		}();
+	</script>
+</body>
+</html>

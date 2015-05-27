@@ -1,0 +1,34 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+	padding: 35px 20px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	
+	img {
+		width: 20px; 
+	}
+}
+
+.navigator {
+	position: fixed;
+	bottom: 0;
+	transform: translateY(100%);
+	transition: transform 0.2s;
+
+	&.active {
+		transform: translateY(0);
+	}
+}
+
+img {
+	float: left;
+	dislpay: block;
+	width: 100%;
+}

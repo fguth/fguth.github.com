@@ -1,0 +1,34 @@
+/* line 1, /Users/Filipe/Projects/Clic/style/main.scss */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* line 8, /Users/Filipe/Projects/Clic/style/main.scss */
+.menu {
+  padding: 35px 20px;
+  position: fixed;
+  top: 0;
+  right: 0; }
+  /* line 14, /Users/Filipe/Projects/Clic/style/main.scss */
+  .menu img {
+    width: 20px; }
+
+/* line 19, /Users/Filipe/Projects/Clic/style/main.scss */
+.navigator {
+  position: fixed;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 0.2s; }
+  /* line 25, /Users/Filipe/Projects/Clic/style/main.scss */
+  .navigator.active {
+    transform: translateY(0); }
+
+/* line 30, /Users/Filipe/Projects/Clic/style/main.scss */
+img {
+  float: left;
+  dislpay: block;
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
