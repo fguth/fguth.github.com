@@ -30,7 +30,8 @@
 			var state = false;
 
 			var check = function() {
-				requestAnimationFrame(check);
+//				requestAnimationFrame(check);
+				setTimeout(check, 1000 / 60 >> 0);
 
 				state = window.scrollY > 100;
 

@@ -2,20 +2,21 @@
 body {
   width: 100%;
   height: 100%;
+  max-width: 414px;
   margin: 0;
   padding: 0; }
 
-/* line 8, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 9, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .menu {
   padding: 35px 20px;
   position: fixed;
   top: 0;
   right: 0; }
-  /* line 14, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 15, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu img {
     width: 20px; }
 
-/* line 19, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 20, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .navigator {
   position: fixed;
   bottom: 0;
@@ -24,15 +25,16 @@ body {
   -webkit-transition: -webkit-transform 0.2s;
   /* Changed here */
   transition: transform 0.2s; }
-  /* line 28, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 29, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .navigator.active {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
 
-/* line 34, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 35, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 img {
   float: left;
   dislpay: block;
-  width: 100%; }
+  width: 100%;
+  max-width: 414px; }
 
 /*# sourceMappingURL=main.css.map */
