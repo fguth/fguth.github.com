@@ -48,19 +48,17 @@ body {
     opacity: 0;
     content: " ";
     -webkit-transition: opacity .2s;
-    /* Changed here */
     transition: opacity .2s; }
   /* line 54, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .content.transit:before {
     opacity: 1;
     -webkit-transition: opacity .2s;
-    /* Changed here */
     transition: opacity .2s; }
   /* line 60, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .content img {
     height: 6600px; }
 
-/* line 65, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 63, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .navigator {
   position: fixed;
   bottom: 0;
@@ -68,14 +66,13 @@ body {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
   -webkit-transition: -webkit-transform 0.2s;
-  /* Changed here */
   transition: transform 0.2s; }
-  /* line 75, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 73, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .navigator.active {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
 
-/* line 81, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 79, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .navigator {
   width: 100%;
   height: 50px;
@@ -83,15 +80,15 @@ body {
   margin: 0;
   padding: 0;
   background: #333; }
-  /* line 89, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 87, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .navigator li {
     display: block;
     float: left;
     text-transform: uppercase; }
-    /* line 94, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+    /* line 92, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
     .navigator li.active {
       box-shadow: inset 0 -2px 0 0 #fff; }
-    /* line 98, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+    /* line 96, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
     .navigator li a {
       padding: 0 10px;
       line-height: 50px;
@@ -101,7 +98,7 @@ body {
       font-weight: bold;
       text-decoration: none; }
 
-/* line 110, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 108, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 img {
   float: left;
   dislpay: block;

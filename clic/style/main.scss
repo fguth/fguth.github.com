@@ -47,19 +47,17 @@ body {
 		bottom: 0;
 		opacity: 0;
 		content: " ";
-		-webkit-transition: opacity .2s; /* Changed here */ 
+		-webkit-transition: opacity .2s;
           transition: opacity .2s;
 	}
 	
 	&.transit:before {
 		opacity: 1;
-		-webkit-transition: opacity .2s; /* Changed here */ 
+		-webkit-transition: opacity .2s;
           transition: opacity .2s;
 	}
 	
-	img {
-		height: 6600px;
-	}
+	img { height: 6600px; }
 }
 
 .navigator {
@@ -69,7 +67,7 @@ body {
 	
 	 -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 0.2s; /* Changed here */ 
+  -webkit-transition: -webkit-transform 0.2s;
           transition: transform 0.2s;
 
 	&.active {
