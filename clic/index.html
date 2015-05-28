@@ -7,15 +7,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/uilang.js"></script>
 	
 	<link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>
 	
-	<a href="" class="menu">
-		<img src="images/menu.png" alt="">
+	<a href="javascript:;" class="menu">
+		<span class="hamb"></span>
 	</a>
+	
+	<div class="menu-opened">
+		<a href="javascript:;" class="menu to-close">
+			<span class="hamb"></span>
+		</a>
+		
+		<img src="images/menu-op.jpg" alt="Imagem">
+	</div>
 	
 	<ul class="navigator">
 		<li><a href="javascript:;" data-top="1560">Esportes</a></li>
@@ -68,7 +77,6 @@
 						$('.content').removeClass('transit');
 					});	
 					
-					
 				});
 				
 				
@@ -77,5 +85,14 @@
 			document.addEventListener('DOMContentLoaded', main);
 		}();
 	</script>
+	
+	<code>
+		clicking on ".menu" adds class "open" on ".menu-opened"
+		clicking on ".menu" adds class "hide" on ".menu"
+		clicking on ".menu" removes class "active" on ".navigator"
+		clicking on ".to-close" removes class "open" on ".menu-opened"
+		clicking on ".to-close" removes class "hide" on ".menu"
+		clicking on ".to-close" adds class "active" on ".navigator"
+	</code>
 </body>
 </html>
