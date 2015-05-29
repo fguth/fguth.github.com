@@ -17,6 +17,19 @@ body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 /* line 19, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+.logo {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  transform: translateY(0);
+  transition: all 0.2s ease-out; }
+  /* line 28, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  .logo img {
+    float: left; }
+
+/* line 31, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .menu {
   width: 80px;
   height: 80px;
@@ -25,15 +38,17 @@ body {
   right: 10px;
   padding: 32px 30px;
   z-index: 4;
-  -webkit-tap-highlight-color: #333; }
-  /* line 29, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  -webkit-tap-highlight-color: #333;
+  transform: translateY(0);
+  transition: all 0.2s ease-out; }
+  /* line 43, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu .hamb {
     display: block;
     width: 20px;
     height: 3px;
     margin: 6px 0 0;
     background: #ffbc00; }
-  /* line 37, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 51, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu .hamb:before, .menu .hamb:after {
     width: 20px;
     height: 3px;
@@ -45,25 +60,25 @@ body {
     opacity: 1;
     -webkit-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease; }
-  /* line 50, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 64, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu .hamb:before {
     margin-top: -6px; }
-  /* line 51, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 65, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu .hamb:after {
     margin-top: 6px; }
-  /* line 53, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 67, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu.to-close {
     top: 0;
     right: 0;
     background: #333; }
-    /* line 59, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+    /* line 73, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
     .menu.to-close .hamb {
       background: #fff; }
-    /* line 63, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+    /* line 77, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
     .menu.to-close .hamb:before, .menu.to-close .hamb:after {
       opacity: 0; }
 
-/* line 69, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 83, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .menu-opened {
   position: fixed;
   padding: 10px 10px 0 0;
@@ -74,29 +89,36 @@ body {
   background: #212121;
   -webkit-transform: translateX(110%);
   transform: translateX(110%);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: transform 0.2s; }
-  /* line 82, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  -webkit-transition: -webkit-transform 0.2s ease .2s;
+  transition: transform 0.2s ease .2s; }
+  /* line 96, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu-opened.open {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  /* line 87, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 101, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu-opened .menu {
     margin: 10px 10px 0 0; }
-  /* line 91, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 105, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .menu-opened img {
     float: left;
     width: 220px; }
 
-/* line 97, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 111, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+.move {
+  -webkit-transform: translateY(-90px);
+  transform: translateY(-90px);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s; }
+
+/* line 119, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .wrapper {
   display: block;
   height: 6600px; }
 
-/* line 102, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 124, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .content {
   height: 6600px; }
-  /* line 105, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 127, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .content:before {
     position: fixed;
     width: 100%;
@@ -111,16 +133,16 @@ body {
     content: " ";
     -webkit-transition: opacity .2s;
     transition: opacity .2s; }
-  /* line 121, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 143, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .content.transit:before {
     opacity: 1;
     -webkit-transition: opacity .2s;
     transition: opacity .2s; }
-  /* line 127, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 149, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .content img {
     height: 6600px; }
 
-/* line 130, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 152, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .navigator {
   position: fixed;
   bottom: 0;
@@ -129,12 +151,12 @@ body {
   transform: translateY(100%);
   -webkit-transition: -webkit-transform 0.2s;
   transition: transform 0.2s; }
-  /* line 140, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 162, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .navigator.active {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
 
-/* line 146, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 168, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 .navigator {
   width: 100%;
   height: 50px;
@@ -142,15 +164,15 @@ body {
   margin: 0;
   padding: 0;
   background: #333; }
-  /* line 154, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+  /* line 176, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
   .navigator li {
     display: block;
     float: left;
     text-transform: uppercase; }
-    /* line 159, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+    /* line 181, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
     .navigator li.active {
       box-shadow: inset 0 -2px 0 0 #fff; }
-    /* line 163, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+    /* line 185, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
     .navigator li a {
       padding: 0 10px;
       line-height: 50px;
@@ -160,7 +182,7 @@ body {
       font-weight: bold;
       text-decoration: none; }
 
-/* line 175, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
+/* line 197, /Users/Filipe/Projects/Filipe Guth/clic/style/main.scss */
 img {
   float: left;
   dislpay: block;

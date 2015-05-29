@@ -16,6 +16,18 @@ body {
 	font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
+.logo {
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	transform: translateY(0);
+	transition: all 0.2s ease-out;
+	
+	img { float: left; }	
+}
+
 .menu {
 	width: 80px;
 	height: 80px;
@@ -25,6 +37,8 @@ body {
 	padding: 32px 30px;
 	z-index: 4;
 	-webkit-tap-highlight-color: #333;
+	transform: translateY(0);
+	transition: all 0.2s ease-out;
 	
 	.hamb {
 		display: block;
@@ -76,8 +90,8 @@ body {
 	background: #212121;
 	-webkit-transform: translateX(110%);
           transform: translateX(110%);
-  -webkit-transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s ease .2s;
+          transition: transform 0.2s ease .2s;
 	
 	&.open {
 		-webkit-transform: translateX(0);
@@ -93,6 +107,14 @@ body {
 		width: 220px;
 	}
 }
+
+.move {
+	-webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+}
+
 
 .wrapper {
 	display: block;

@@ -14,6 +14,10 @@
 
 <body>
 	
+	<a href="javascript:;" class="logo" data-top="0">
+		<img src="images/logo.jpg" alt="Imagem">
+	</a>
+	
 	<a href="javascript:;" class="menu">
 		<span class="hamb"></span>
 	</a>
@@ -44,12 +48,15 @@
 
 			var memory = false;
 			var navigator = '.navigator';
+			var logo = '.logo';
+			var menu = '.menu';
 			var state = false;
+			var currentPos = 0;
 
 			var check = function() {
 //				requestAnimationFrame(check);
 				setTimeout(check, 500);
-
+				
 				state = window.scrollY > 100;
 
 				if (memory != state) {
@@ -62,11 +69,26 @@
 					}
 				}
 			};
+			
+			var isMovingUp = function () {
+				if (currentPos > window.scrollY) {
+					logo.classList.remove('move');
+					menu.classList.remove('move');
+				} else {
+					logo.classList.add('move');
+					menu.classList.add('move');
+				}
+				
+				currentPos = window.scrollY;
+			};
 
 			var main = function() {
 				navigator = document.querySelector(navigator);
+				logo = document.querySelector(logo);
+				menu = document.querySelector(menu);
 				
 				check();
+				
 				
 				$('.navigator a').on('click', function () {
 					var el = $(this);
@@ -79,7 +101,9 @@
 					
 				});
 				
-				
+				$(window).on('scroll', function () {
+					isMovingUp();
+				});
 			};
 
 			document.addEventListener('DOMContentLoaded', main);
