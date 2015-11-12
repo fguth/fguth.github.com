@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+main() {
+  mkdir -p public/images
+  mkdir -p public/scripts
+  mkdir -p public/styles
+}
+
+. tasks/execute

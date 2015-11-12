@@ -1,0 +1,106 @@
+html {
+  line-height: $golden;
+  color: #000;
+  font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+  font-weight: lighter;
+  font-size: 20px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+::selection,
+::-moz-selection {
+  background: #222;
+  color: #fff;
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  border-bottom: 1px dashed #ccc;
+  opacity: .4;
+  @include transition(color .75s ease, opacity .5s ease);
+  
+  &:hover {
+    color: #f33;
+    opacity: 1;
+    @include transition(color .25s ease, opacity .25s ease);
+  }
+}
+
+h1, h2, h3, h4, p, a, span {
+  font-size: 1rem;
+  letter-spacing: 0.14rem;
+  color: #000;
+  font-weight: lighter;
+  text-decoration: none;
+  line-height: 1rem;
+  
+  span { opacity: .4; padding-left: 5px; }
+}
+
+.vcard {
+  display: table;
+  height: 200px;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  margin-top: -0.5rem;
+  
+  h1, ul {
+    display: table-cell;
+    vertical-align: text-top;
+  }
+  
+  ul li {
+    display: block;
+    height: 40px;
+    
+    a {
+      display: inline-block;
+      width: auto;
+      line-height: 40px;
+    }
+  }
+}
+
+.work {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 100vh 0 50vh 5vw;
+  pointer-events: none;
+  
+  .project {
+    display: block;
+    margin-bottom: 50vh;
+  }
+  
+  h2 {
+    width: 100vh;
+    height: 5vw;
+    @include transform(rotate(-90deg));
+    position: fixed;
+    text-align: center;
+    bottom: -5vw;
+    left: 0;
+    transform-origin: left top;
+    vertical-align: middle;
+    line-height: 5vw;
+    opacity: 0;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+}

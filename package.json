@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "bourbon": "^4.2.2",
+    "html-minifier": "^0.7.2",
+    "http-server": "^0.8.0",
+    "imagemin-cli": "^2.0.0",
+    "make-help": "0.0.3",
+    "mustache": "^2.2.0",
+    "node-sass": "^3.4.1",
+    "vigilia": "^0.1.0",
+    "webpack": "^1.8.0"
+  },
+  "private": true
+}

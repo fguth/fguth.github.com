@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+main() {
+  node_modules/imagemin-cli/cli.js client/images public/images
+}
+
+. tasks/execute
