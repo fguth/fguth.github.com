@@ -24,20 +24,20 @@ body {
 }
 
 a {
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px dotted #ccc;
   opacity: .4;
-  @include transition(color .75s ease, opacity .5s ease);
+  @include transition(color 1s ease, opacity 1s ease);
   
   &:hover {
     color: #f33;
     opacity: 1;
-    @include transition(color .25s ease, opacity .25s ease);
+    @include transition(color .3s ease, opacity .3s ease);
   }
 }
 
 h1, h2, h3, h4, p, a, span {
   font-size: 1rem;
-  letter-spacing: 0.14rem;
+  letter-spacing: 0.15rem;
   color: #000;
   font-weight: lighter;
   text-decoration: none;
@@ -53,11 +53,11 @@ h1, h2, h3, h4, p, a, span {
   position: fixed;
   top: 50%;
   left: 10%;
-  margin-top: -0.5rem;
+  margin-top: -100px;
   
   h1, ul {
     display: table-cell;
-    vertical-align: text-top;
+    vertical-align: middle;
   }
   
   ul li {
@@ -68,6 +68,7 @@ h1, h2, h3, h4, p, a, span {
       display: inline-block;
       width: auto;
       line-height: 40px;
+      border: none;
     }
   }
 }
