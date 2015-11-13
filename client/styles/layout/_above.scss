@@ -100,11 +100,11 @@ h1, h2, h3, h4, p, a, span {
     @include transform(rotate(-90deg));
     position: fixed;
     text-align: center;
-    bottom: -5vw;
+    bottom: -8vw;
     left: 0;
     transform-origin: left top;
     vertical-align: middle;
-    line-height: 5vw;
+    line-height: 8vw;
     opacity: 0;
     @include transition(opacity .25s $cubic);
     
