@@ -1,5 +1,9 @@
+window.jQuery = window.$ = require('jquery')
+
 !function() {
   'use strict';
+  
+  require('./scroll');
 
   var loadMinorStyles = function() {
     var link = document.createElement('link');

@@ -19,6 +19,8 @@ input {
   color: #fff;
 }
 
+$cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
 body {
   background: #fff;
 }
@@ -54,6 +56,10 @@ h1, h2, h3, h4, p, a, span {
   top: 50%;
   left: 13%;
   margin-top: -100px;
+  opacity: 1;
+  @include transition(opacity .5s $cubic);
+  
+  &.hide { opacity: 0; }
   
   h1, ul {
     display: table-cell;
@@ -78,17 +84,19 @@ h1, h2, h3, h4, p, a, span {
   width: 100%;
   position: relative;
   z-index: 2;
-  padding: 100vh 0 50vh 5vw;
+  padding: 100vh 8vw 50vh 8vw;
   pointer-events: none;
   
   .project {
     display: block;
     margin-bottom: 50vh;
+    
+    img { margin-bottom: 5vw; }
   }
   
   h2 {
     width: 100vh;
-    height: 5vw;
+    height: 8vw;
     @include transform(rotate(-90deg));
     position: fixed;
     text-align: center;
@@ -98,6 +106,12 @@ h1, h2, h3, h4, p, a, span {
     vertical-align: middle;
     line-height: 5vw;
     opacity: 0;
+    @include transition(opacity .25s $cubic);
+    
+    &.show {
+      opacity: 1;
+      @include transition(opacity .5s $cubic .25s);
+    }
   }
   
   img {
