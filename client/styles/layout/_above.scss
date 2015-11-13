@@ -22,7 +22,7 @@ input {
 $cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
 body {
-  background: #fff;
+  background: #f6f6f6;
 }
 
 a {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, p, a, span {
   width: 100%;
   position: relative;
   z-index: 2;
-  padding: 100vh 8vw 50vh 8vw;
+  padding: 100vh 12vw 50vh 12vw;
   pointer-events: none;
   
   .project {
