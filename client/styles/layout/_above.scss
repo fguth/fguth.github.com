@@ -3,7 +3,7 @@ html {
   color: #000;
   font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 26px;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -46,6 +46,8 @@ h1, h2, h3, h4, p, a, span {
   line-height: 1rem;
   
   span { opacity: .4; padding-left: 5px; }
+  
+  br { display: none; }
 }
 
 .vcard {
@@ -64,7 +66,11 @@ h1, h2, h3, h4, p, a, span {
   h1, ul {
     display: table-cell;
     vertical-align: middle;
+    width: auto;
+    text-align: left;
   }
+  
+  ul { margin-top: 0;}
   
   ul li {
     display: block;
@@ -80,42 +86,47 @@ h1, h2, h3, h4, p, a, span {
 }
 
 .work {
-  display: block;
-  width: 100%;
-  position: relative;
-  z-index: 2;
-  padding: 100vh 12vw 50vh 12vw;
-  pointer-events: none;
-  
-  .project {
+  opacity: 0;
+  @include transition(opacity .5s $cubic .5s);
+}
+
+@media #{"only screen and (max-width : 1680px)"} { html { font-size: 23px; } }
+@media #{"only screen and (max-width : 1440px)"} { html { font-size: 20px; } }
+
+@media #{"only screen and (max-width : 853px)"} {
+  .vcard {
     display: block;
-    margin-bottom: 50vh;
+    height: 400px;
+    margin-top: -200px;
     
-    img { margin-bottom: 5vw; }
-  }
-  
-  h2 {
-    width: 100vh;
-    height: 8vw;
-    @include transform(rotate(-90deg));
-    position: fixed;
-    text-align: center;
-    bottom: -8vw;
-    left: 0;
-    transform-origin: left top;
-    vertical-align: middle;
-    line-height: 8vw;
-    opacity: 0;
-    @include transition(opacity .25s $cubic);
+    h1, ul {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
     
-    &.show {
-      opacity: 1;
-      @include transition(opacity .5s $cubic .25s);
+    ul {
+      margin-top: 50%;
+      
+      li { height: 44px; }
     }
   }
+}
+
+@media #{"only screen and (max-width : 414px)"} {
+  html { font-size: 18px;}
   
-  img {
-    display: block;
-    width: 100%;
+  .vcard {
+    width: 90%;
+    left: 5%;
+    
+    h1 {
+      line-height: 2.2rem;
+      
+      span { padding-left: 0; }
+      br { display: block; }
+    }
+    
+    ul { margin-top: 40%; }
   }
 }
