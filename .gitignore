@@ -2,6 +2,7 @@
 .vagrant
 Desktop.ini
 node_modules
+
 npm-debug.log
 public
 Thumbs.db
