@@ -13,9 +13,13 @@
 
 # OS & EDITOR FOLDERS
 # ----------------------------------
-
-.DS_Store
-thumbs.db
-
 assets/stylesheet/.sass-cache/*
 .sass-cache
+
+.DS_Store
+.vagrant
+Desktop.ini
+node_modules
+npm-debug.log
+public
+Thumbs.db
