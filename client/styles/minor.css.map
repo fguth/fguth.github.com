@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "file": "minor.css",
+  "sources": [
+    "minor.scss",
+    "layout/_below.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": "",
+  "names": []
+}

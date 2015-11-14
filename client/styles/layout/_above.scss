@@ -86,11 +86,49 @@ h1, h2, h3, h4, p, a, span {
 }
 
 .work {
-  opacity: 0;
-  @include transition(opacity .5s $cubic .5s);
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 100vh 12vw 50vh;
+  pointer-events: none;
+  opacity: 1;
+  
+  .project {
+    display: block;
+    margin-bottom: 50vh;
+    
+    img { margin-bottom: 5vw; }
+  }
+  
+  h2 {
+    width: 100vh;
+    height: 8vw;
+    @include transform(rotate(-90deg));
+    position: fixed;
+    text-align: center;
+    bottom: -8vw;
+    left: 0;
+    transform-origin: left top;
+    vertical-align: middle;
+    line-height: 8vw;
+    opacity: 0;
+    @include transition(opacity .25s $cubic);
+    
+    &.show {
+      opacity: 1;
+      @include transition(opacity .5s $cubic .25s);
+    }
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media #{"only screen and (max-width : 1680px)"} { html { font-size: 23px; } }
+
 @media #{"only screen and (max-width : 1440px)"} { html { font-size: 20px; } }
 
 @media #{"only screen and (max-width : 853px)"} {
@@ -111,6 +149,11 @@ h1, h2, h3, h4, p, a, span {
       li { height: 44px; }
     }
   }
+  .work {
+    padding: 100vh 9vw 70vh;
+    
+    .project { margin-bottom: 30vh; background: transparent; }
+  }
 }
 
 @media #{"only screen and (max-width : 414px)"} {
@@ -128,5 +171,12 @@ h1, h2, h3, h4, p, a, span {
     }
     
     ul { margin-top: 40%; }
+  }
+  
+  .work {
+    
+    .project { background: #f6f6f6; }
+    
+    h2 { display: none; }  
   }
 }
