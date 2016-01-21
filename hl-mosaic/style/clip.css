@@ -1,0 +1,123 @@
+/* line 5, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.image-holder {
+  position: relative;
+  overflow: hidden; }
+
+/* line 14, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clipped .article-category,
+.clipped .article-title,
+.clipped .article-excerpt {
+  padding-left: 5%; }
+
+/* line 24, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clipped:hover .square-clip-path-1 {
+  -webkit-clip-path: polygon(4% 9%, 96% 13%, 93% 100%, 7% 98%);
+  clip-path: polygon(4% 9%, 96% 13%, 93% 100%, 7% 98%); }
+
+/* line 33, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clipped:hover .square-clip-path-2 {
+  -webkit-clip-path: polygon(9% 11%, 92% 14%, 96% 97%, 3% 100%);
+  clip-path: polygon(9% 11%, 92% 14%, 96% 97%, 3% 100%); }
+
+/* line 42, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clipped:hover .square-clip-path-3 {
+  -webkit-clip-path: polygon(8% 13%, 92% 8%, 97% 99%, 3% 97%);
+  clip-path: polygon(8% 13%, 92% 8%, 97% 99%, 3% 97%); }
+
+/* line 69, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clipped:hover .circle-mask {
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: rotate(-10deg) translateX(-30px) translateY(-20px) scale(2.9);
+  transform: rotate(-10deg) translateX(-30px) translateY(-20px) scale(2.9); }
+
+/* line 78, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clipped:active .clip-mask-orange {
+  background-color: rgba(247, 146, 30, 0.6); }
+
+/* line 79, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clipped:active .clip-mask-blue {
+  background-color: rgba(129, 209, 227, 0.6); }
+
+/* line 80, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clipped:active .clip-mask-green {
+  background-color: rgba(204, 222, 133, 0.6); }
+
+/* line 87, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.square-clip-path-1,
+.square-clip-path-2,
+.square-clip-path-3 {
+  -webkit-clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
+  clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
+  transition: all 0.233s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  position: absolute; }
+
+/* line 97, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.circle-clip-path {
+  transition: all 0.233s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  position: absolute; }
+
+/* line 108, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.circle-mask {
+  position: absolute;
+  z-index: 2;
+  outline: 300px solid #fff;
+  dropshadow: 5px 5px 5px #fff;
+  transition: all 0.233s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: rotate(0deg) translateX(0) translateY(0) scale(3);
+  transform: rotate(0deg) translateX(0) translateY(0) scale(3); }
+
+/* line 118, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clip-bg {
+  background-size: cover; }
+  /* line 121, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-1 {
+    background: url("../images/square-01.jpg") no-repeat center;
+    background-size: cover; }
+  /* line 122, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-2 {
+    background: url("../images/square-02.jpg") no-repeat center;
+    background-size: cover; }
+  /* line 123, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-3 {
+    background: url("../images/square-03.jpg") no-repeat center;
+    background-size: cover; }
+  /* line 124, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-4 {
+    background: url("../images/square-04.jpg") no-repeat center;
+    background-size: cover; }
+  /* line 125, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-5 {
+    background: url("../images/square-05.jpg") no-repeat center;
+    background-size: cover; }
+  /* line 126, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-6 {
+    background: url("../images/square-06.jpg") no-repeat center;
+    background-size: cover; }
+  /* line 127, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-7 {
+    background: url("../images/square-07.jpg") no-repeat center;
+    background-size: cover; }
+  /* line 128, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-8 {
+    background: url("../images/square-08.jpg") no-repeat center;
+    background-size: cover; }
+  /* line 129, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+  .clip-bg-9 {
+    background: url("../images/square-09.jpg") no-repeat center;
+    background-size: cover; }
+
+/* line 134, /Users/Filipe/Desktop/Instant Rollover/style/clip.scss */
+.clip-mask-orange,
+.clip-mask-blue,
+.clip-mask-green {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  transition: background 0.144s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*# sourceMappingURL=clip.css.map */
