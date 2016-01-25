@@ -1,0 +1,166 @@
+@mixin transi {
+  transition: all .233s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.image-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.clipped {
+  
+  .article-category,
+  .article-title,
+  .article-excerpt {
+    padding-left: 5%;
+  }
+  
+  &:hover {
+    
+//    &#circle-article {
+//      background: #000;
+//      height: 43.9vw;
+//    }
+    
+    .square-clip-path {
+      
+
+      
+      &-1 {
+//        -webkit-clip-path: polygon(5% 10%, 97% 16%, 90% 100%, 10% 97%);
+//        clip-path: polygon(5% 10%, 97% 16%, 90% 100%, 10% 97%);
+        
+        -webkit-clip-path: polygon(4% 9%, 96% 13%, 93% 100%, 7% 98%);
+                clip-path: polygon(4% 9%, 96% 13%, 93% 100%, 7% 98%);
+      }
+      
+      
+      &-2 {
+//        -webkit-clip-path: polygon(11% 12%, 87% 18%, 94% 95%, 4% 98%);
+//                clip-path: polygon(11% 12%, 87% 18%, 94% 95%, 4% 98%);
+        
+        -webkit-clip-path: polygon(9% 11%, 92% 14%, 96% 97%, 3% 100%);
+                clip-path: polygon(9% 11%, 92% 14%, 96% 97%, 3% 100%);
+      }
+      
+      
+      &-3 {
+//        -webkit-clip-path: polygon(10% 14%, 90% 7%, 97% 99%, 3% 97%);
+//                clip-path: polygon(10% 14%, 90% 7%, 97% 99%, 3% 97%);
+        
+        // INITIAL STATE
+//      -webkit-clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
+        //      clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
+        
+        -webkit-clip-path: polygon(8% 13%, 92% 8%, 97% 99%, 3% 97%);
+                clip-path: polygon(8% 13%, 92% 8%, 97% 99%, 3% 97%);
+      }
+      
+//      &-1,
+//      &-2,
+//      &-3 {
+//        -webkit-transform: scale(1.03);
+//        transform: scale(1.03);
+//      }
+    }
+    
+    .circle-clip-path {
+      -webkit-transform: scale(.275);
+              transform: scale(.275);
+    }
+    
+    .circle-mask {
+      -webkit-transform: rotate(0deg) translateX(0) translateY(-1.5%) scale(.9);
+              transform: rotate(0deg) translateX(0) translateY(-1.5%) scale(.9);
+    }
+    
+    .circled {
+      -webkit-transform: translateX(-35%) translateY(-25%);
+              transform: translateX(-35%) translateY(-25%);
+      margin-bottom: 25%;
+      transition: transform .233s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    
+    .article-text {
+      position: absolute;
+      display: block;
+      top: 7%;
+      padding-left: 30%;
+    }
+    
+    .articles-list {
+      opacity: 1;
+      transition: opacity .610s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  }
+  
+  &:active {
+    .clip-mask-orange { background-color: rgba(#f7921e, .8); }
+    .clip-mask-blue { background-color: rgba(#81d1e3, .8); }
+    .clip-mask-green { background-color: rgba(#ccde85, .8); }
+    
+    .clip-mask-orange,
+    .clip-mask-blue,
+    .clip-mask-green {
+      transition: background .144s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  }
+}
+
+.square-clip-path {
+  &-1,
+  &-2,
+  &-3 {
+    -webkit-clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
+    clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
+    @include transi;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    position: absolute;
+  }
+}
+
+.circle-clip-path {
+  @include transi;
+  -webkit-transform: translateX(0) scale(1);
+  transform: translateX(0) scale(1);
+  position: absolute;
+  
+}
+
+.circle-mask {
+  position: absolute;
+  z-index: 2;
+  @include transi;
+  -webkit-transform: rotate(0deg) translateX(0) translateY(0) scale(3);
+          transform: rotate(0deg) translateX(0) translateY(0) scale(3);
+}
+
+.circled {
+  -webkit-transform: translateX(0) translateY(0);
+          transform: translateX(0) translateY(0);
+  transition: transform .233s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.clip-bg {
+  background-size: cover;
+
+  &-1 { background: url('../images/square-01.jpg') no-repeat center; background-size: cover; }
+  &-2 { background: url('../images/square-02.jpg') no-repeat center; background-size: cover; }
+  &-3 { background: url('../images/square-03.jpg') no-repeat center; background-size: cover; }
+  &-4 { background: url('../images/square-04.jpg') no-repeat center; background-size: cover; }
+  &-5 { background: url('../images/square-05.jpg') no-repeat center; background-size: cover; }
+  &-6 { background: url('../images/square-06.jpg') no-repeat center; background-size: cover; }
+  &-7 { background: url('../images/square-07.jpg') no-repeat center; background-size: cover; }
+  &-8 { background: url('../images/square-08.jpg') no-repeat center; background-size: cover; }
+  &-9 { background: url('../images/square-09.jpg') no-repeat center; background-size: cover; }
+}
+
+.clip-mask-orange,
+.clip-mask-blue,
+.clip-mask-green {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  transition: background .610s cubic-bezier(0.215, 0.61, 0.355, 1);
+}

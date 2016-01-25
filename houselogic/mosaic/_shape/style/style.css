@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'BentonSans-Book';
+  src: url("../fonts/BentonSans-Book.eot");
+  src: url("../fonts/BentonSans-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Book.woff") format("woff"), url("../fonts/BentonSans-Book.ttf") format("truetype"), url("../fonts/BentonSans-Book.svg#BentonSans-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BentonSans';
+  src: url("../fonts/BentonSans-Medium.eot");
+  src: url("../fonts/BentonSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Medium.woff") format("woff"), url("../fonts/BentonSans-Medium.ttf") format("truetype"), url("../fonts/BentonSans-Medium.svg#BentonSans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BentonSans Comp';
+  src: url("../fonts/BentonSansComp-Bold.eot");
+  src: url("../fonts/BentonSansComp-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSansComp-Bold.woff") format("woff"), url("../fonts/BentonSansComp-Bold.ttf") format("truetype"), url("../fonts/BentonSansComp-Bold.svg#BentonSansComp-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+/* line 54, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+body {
+  background: #fff;
+  color: #222;
+  padding: 3%; }
+
+/* line 60, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+.page-title {
+  color: #ddd;
+  line-height: 50px;
+  font-family: 'BentonSans Comp', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  padding: 100px 0; }
+  /* line 69, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+  .page-title span {
+    font-size: 30px; }
+
+/* line 74, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+.grid {
+  max-width: 1440px;
+  min-width: 1024px;
+  display: block;
+  margin: 0 auto 150px; }
+  /* line 80, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+  .grid-column {
+    display: inline-block;
+    width: 38%;
+    vertical-align: top; }
+    /* line 85, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+    .grid-column-small {
+      width: 20%;
+      margin: 0 2%;
+      padding-top: 1.5%; }
+
+/* line 93, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+.article {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  transition: underline 0.377s cubic-bezier(0.215, 0.61, 0.355, 1);
+  vertical-align: top;
+  margin-bottom: 3vw; }
+  /* line 102, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+  .article-image-mask {
+    width: 100%;
+    background: #ccc;
+    overflow: hidden; }
+  /* line 108, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+  .article-image {
+    position: relative;
+    width: 480px;
+    top: 0;
+    margin: -10px 0 0 -10px; }
+  /* line 115, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+  .article-category {
+    line-height: 20px;
+    font-size: 13px;
+    line-height: 45px;
+    font-family: 'BentonSans-Book', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #8e9191;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    /* line 124, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+    .article-category a {
+      text-decoration: none;
+      color: #1a8cf3; }
+      /* line 128, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+      .article-category a:hover {
+        color: #0a65b7; }
+  /* line 134, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+  .article-title {
+    font-family: 'BentonSans Comp', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 5px;
+    color: #222;
+    transition: color 0.377s ease;
+    cursor: pointer; }
+  /* line 144, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+  .article-excerpt {
+    font-family: 'BentonSans-Book', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #8e9191;
+    font-size: 15px;
+    line-height: 24px; }
+  /* line 151, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+  .article:hover {
+    cursor: pointer; }
+    /* line 154, /Users/Filipe/Desktop/Instant Rollover/style/style.scss */
+    .article:hover .article-title {
+      color: #1a8cf3; }
+
+/*# sourceMappingURL=style.css.map */
