@@ -47,13 +47,13 @@
     -webkit-transform: translateX(0) translateY(-25%) scale(0.4);
     transform: translateX(0) translateY(-25%) scale(0.4); }
   100% {
-    -webkit-transform: translateX(-25%) translateY(-25%) scale(0.4);
-    transform: translateX(-25%) translateY(-25%) scale(0.4); } }
+    -webkit-transform: translateX(-27%) translateY(-25%) scale(0.4);
+    transform: translateX(-27%) translateY(-25%) scale(0.4); } }
 
 @keyframes moveit-out {
-  0%, 66% {
-    -webkit-transform: translateX(-25%) translateY(-25%) scale(0.4);
-    transform: translateX(-25%) translateY(-25%) scale(0.4); }
+  0% {
+    -webkit-transform: translateX(-27%) translateY(-25%) scale(0.4);
+    transform: translateX(-27%) translateY(-25%) scale(0.4); }
   100% {
     -webkit-transform: translateX(0) translateY(-25%) scale(0.4);
     transform: translateX(0) translateY(-25%) scale(0.4); } }
@@ -160,28 +160,27 @@
   left: 25%;
   z-index: -1;
   opacity: 0;
-  transition: left 0.233s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.233s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-  transition: left 0.233s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+  transition: left 0.233s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.233s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
 
-/* line 157, /Users/Filipe/Desktop/MOSAIC/style/list.scss */
+/* line 156, /Users/Filipe/Desktop/MOSAIC/style/list.scss */
 .clipped:hover .circled {
   animation: circleit-in 0.377s cubic-bezier(0.215, 0.61, 0.355, 1) 0s 1 alternate, moveit-in 0.521s cubic-bezier(0.215, 0.61, 0.355, 1) 0.377s 1 alternate;
   -webkit-transform: translateX(-27%) translateY(-25%) scale(0.4);
   transform: translateX(-27%) translateY(-25%) scale(0.4); }
 
-/* line 163, /Users/Filipe/Desktop/MOSAIC/style/list.scss */
+/* line 162, /Users/Filipe/Desktop/MOSAIC/style/list.scss */
 .clipped:hover .hover-text {
   left: 45%;
   opacity: 1;
   transition: left 0.233s cubic-bezier(0.215, 0.61, 0.355, 1) 0.61s, opacity 0.233s cubic-bezier(0.215, 0.61, 0.355, 1) 0.61s; }
 
-/* line 169, /Users/Filipe/Desktop/MOSAIC/style/list.scss */
+/* line 168, /Users/Filipe/Desktop/MOSAIC/style/list.scss */
 .clipped:hover .article-text {
   opacity: 0;
   margin-top: -8%;
   transition: opacity 0.144s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, margin 0.144s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
 
-/* line 175, /Users/Filipe/Desktop/MOSAIC/style/list.scss */
+/* line 174, /Users/Filipe/Desktop/MOSAIC/style/list.scss */
 .clipped:hover .articles-list {
   top: 40%;
   transition: top 0.377s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
