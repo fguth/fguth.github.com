@@ -1,39 +1,3 @@
-/* line 1, /Users/Filipe/Desktop/MOSAIC/style/reset.scss */
-* {
-  box-sizing: border-box; }
-
-/* line 5, /Users/Filipe/Desktop/MOSAIC/style/reset.scss */
-a, button {
-  outline: 0;
-  -webkit-tap-highlight-color: transparent; }
-
-/* line 10, /Users/Filipe/Desktop/MOSAIC/style/reset.scss */
-body, button, h1, h2, h3, h4, h5, h6, hr, ol, p, ul {
-  margin: 0; }
-
-/* line 14, /Users/Filipe/Desktop/MOSAIC/style/reset.scss */
-body, html {
-  width: 100%;
-  height: 100%; }
-
-/* line 19, /Users/Filipe/Desktop/MOSAIC/style/reset.scss */
-button, ol, ul {
-  padding: 0; }
-
-/* line 23, /Users/Filipe/Desktop/MOSAIC/style/reset.scss */
-button {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  font-size: 1rem; }
-
-@font-face {
-  font-family: 'BentonSans';
-  src: url("../fonts/BentonSans-Bold.eot");
-  src: url("../fonts/BentonSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Bold.woff") format("woff"), url("../fonts/BentonSans-Bold.ttf") format("truetype"), url("../fonts/BentonSans-Bold.svg#BentonSans-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
 @font-face {
   font-family: 'BentonSans-Book';
   src: url("../fonts/BentonSans-Book.eot");
@@ -55,45 +19,30 @@ button {
   font-weight: bold;
   font-style: normal; }
 
-/* line 4, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+/* line 54, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
 body {
   background: #fff;
   color: #222;
   padding: 3%; }
 
-/* line 10, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
-.page-title {
-  color: #ddd;
-  line-height: 50px;
-  font-family: 'BentonSans Comp', sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 60px;
-  width: 100%;
-  text-align: center;
-  padding: 100px 0; }
-  /* line 19, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
-  .page-title span {
-    font-size: 30px; }
-
-/* line 24, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+/* line 60, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
 .grid {
   max-width: 1440px;
   min-width: 1024px;
   display: block;
   margin: 0 auto 150px; }
-  /* line 30, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+  /* line 66, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
   .grid-column {
     display: inline-block;
     width: 38%;
     vertical-align: top; }
-    /* line 35, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+    /* line 71, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
     .grid-column-small {
       width: 20%;
       margin: 0 2%;
       padding-top: 1.5%; }
 
-/* line 43, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+/* line 79, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
 .article {
   margin: 0 auto;
   max-width: 100%;
@@ -101,20 +50,19 @@ body {
   position: relative;
   transition: underline 0.377s cubic-bezier(0.215, 0.61, 0.355, 1);
   vertical-align: top;
-  margin-bottom: 3vw;
-  overflow: hidden; }
-  /* line 53, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+  margin-bottom: 3vw; }
+  /* line 88, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
   .article-image-mask {
     width: 100%;
     background: #ccc;
     overflow: hidden; }
-  /* line 59, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+  /* line 94, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
   .article-image {
     position: relative;
     width: 480px;
     top: 0;
     margin: -10px 0 0 -10px; }
-  /* line 66, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+  /* line 101, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
   .article-category {
     line-height: 20px;
     font-size: 13px;
@@ -125,14 +73,14 @@ body {
     color: #8e9191;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    /* line 75, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+    /* line 110, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
     .article-category a {
       text-decoration: none;
       color: #1a8cf3; }
-      /* line 79, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+      /* line 114, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
       .article-category a:hover {
         color: #0a65b7; }
-  /* line 85, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+  /* line 120, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
   .article-title {
     font-family: 'BentonSans Comp', sans-serif;
     font-weight: bold;
@@ -143,7 +91,7 @@ body {
     color: #222;
     transition: color 0.377s ease;
     cursor: pointer; }
-  /* line 95, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+  /* line 130, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
   .article-excerpt {
     font-family: 'BentonSans-Book', sans-serif;
     font-weight: normal;
@@ -151,10 +99,10 @@ body {
     color: #8e9191;
     font-size: 15px;
     line-height: 24px; }
-  /* line 102, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+  /* line 137, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
   .article:hover {
     cursor: pointer; }
-    /* line 105, /Users/Filipe/Desktop/MOSAIC/style/style.scss */
+    /* line 140, /Users/Filipe/Dropbox/Dropbox (Work & Co)/Projects/Instant Rollover/_NEW/style/style.scss */
     .article:hover .article-title {
       color: #1a8cf3; }
 

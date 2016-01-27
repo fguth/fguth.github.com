@@ -1,4 +1,6 @@
-@import 'mixins';
+@mixin transi {
+  transition: all .233s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
 
 .image-holder {
   position: relative;
@@ -6,8 +8,6 @@
 }
 
 .clipped {
-  
-  &.circle .article-category { color: #222; }
   
   .article-category,
   .article-title,
@@ -19,22 +19,44 @@
     
     .square-clip-path {
       
+
+      
       &-1 {
+//        -webkit-clip-path: polygon(5% 10%, 97% 16%, 90% 100%, 10% 97%);
+//        clip-path: polygon(5% 10%, 97% 16%, 90% 100%, 10% 97%);
+        
         -webkit-clip-path: polygon(4% 9%, 96% 13%, 93% 100%, 7% 98%);
                 clip-path: polygon(4% 9%, 96% 13%, 93% 100%, 7% 98%);
       }
       
       
       &-2 {
+//        -webkit-clip-path: polygon(11% 12%, 87% 18%, 94% 95%, 4% 98%);
+//                clip-path: polygon(11% 12%, 87% 18%, 94% 95%, 4% 98%);
+        
         -webkit-clip-path: polygon(9% 11%, 92% 14%, 96% 97%, 3% 100%);
                 clip-path: polygon(9% 11%, 92% 14%, 96% 97%, 3% 100%);
       }
       
       
       &-3 {
+//        -webkit-clip-path: polygon(10% 14%, 90% 7%, 97% 99%, 3% 97%);
+//                clip-path: polygon(10% 14%, 90% 7%, 97% 99%, 3% 97%);
+        
+        // INITIAL STATE
+//      -webkit-clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
+        //      clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
+        
         -webkit-clip-path: polygon(8% 13%, 92% 8%, 97% 99%, 3% 97%);
                 clip-path: polygon(8% 13%, 92% 8%, 97% 99%, 3% 97%);
       }
+      
+//      &-1,
+//      &-2,
+//      &-3 {
+//        -webkit-transform: scale(1.03);
+//        transform: scale(1.03);
+//      }
     }
   }
   
@@ -45,7 +67,9 @@
     
     .clip-mask-orange,
     .clip-mask-blue,
-    .clip-mask-green { @include transition(background, .144s, 0s); }
+    .clip-mask-green {
+      transition: background .144s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
   }
 }
 
@@ -55,11 +79,28 @@
   &-3 {
     -webkit-clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
     clip-path: polygon(5% 10%, 95% 10%, 95% 100%, 5% 100%);
-    @include transition(all, .233s, 0s);
+    @include transi;
     -webkit-transform: scale(1);
     transform: scale(1);
     position: absolute;
   }
+}
+
+.circle-clip-path {
+  @include transi;
+  -webkit-transform: translateX(0) scale(1);
+  transform: translateX(0) scale(1);
+  position: absolute;
+}
+
+.circle-mask {
+  position: absolute;
+  z-index: 2;
+  outline: 300px solid #fff;
+  dropshadow: 5px 5px 5px #fff;
+  @include transi;
+  -webkit-transform: rotate(0deg) translateX(0) translateY(0) scale(3);
+          transform: rotate(0deg) translateX(0) translateY(0) scale(3);
 }
 
 .clip-bg {
@@ -82,5 +123,5 @@
   background-color: transparent;
   width: 100%;
   height: 100%;
-  @include transition(background, .610s, 0s);
+  transition: background .610s cubic-bezier(0.215, 0.61, 0.355, 1);
 }

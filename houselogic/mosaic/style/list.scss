@@ -1,0 +1,179 @@
+@import 'mixins';
+
+@keyframes circleit-in {
+  0% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+          transform: translateX(0) translateY(0) scale(1);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(-25%) scale(.4);
+            transform: translateX(0) translateY(-25%) scale(.4);
+  }
+}
+
+@keyframes circleit-out {
+  0% {
+    -webkit-transform: translateX(0) translateY(-25%) scale(.4);
+            transform: translateX(0) translateY(-25%) scale(.4);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+          transform: translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes moveit-in {
+  0%, 44% {
+    -webkit-transform: translateX(0) translateY(-25%) scale(.4);
+            transform: translateX(0) translateY(-25%) scale(.4);
+  }
+  100% {
+     -webkit-transform: translateX(-25%) translateY(-25%) scale(.4);
+            transform: translateX(-25%) translateY(-25%) scale(.4);
+  }
+}
+
+@keyframes moveit-out {
+  0%, 66% {
+     -webkit-transform: translateX(-25%) translateY(-25%) scale(.4);
+            transform: translateX(-25%) translateY(-25%) scale(.4);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(-25%) scale(.4);
+            transform: translateX(0) translateY(-25%) scale(.4);
+  }
+}
+
+.articles-list {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 101%;
+  height: 60%;
+  padding: 0 5% 0;
+  transition: top .521s $cubic .377s;
+  
+//  &:before {
+//    display: block;
+//    width: 4vw;
+//    height: 3px;
+//    background: #ccc;
+//    content: " ";
+//    position: relative;
+//    top: -5%;
+//  }
+  
+  
+  li {
+    display: table;
+    width: 100%;
+    @include font('bold');
+    font-size: 16px;
+    line-height: 24px;
+    height: 60px;
+    margin-bottom: 10px;
+    
+    &:hover {
+      color: #1a8cf3;
+    }
+  }
+  
+  .list-text {
+    width: calc(100% - 5vw);
+    height: 4vw;
+    padding-right: 5%;
+    padding-left: 5%;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+  
+  .list-image {
+    width: 4vw;
+    display: table-cell;
+    height: 4vw;
+    
+    &.image-01 { background: url('http://c0263062.cdn.cloudfiles.rackspacecloud.com/content/images/winterize-your-home-boot-tray_d9b36728f3d0883ae9c8be75f6bc4c89_EcYRwmT.jpg') no-repeat center; background-size: cover;}
+    &.image-02 { background: url('http://c0263062.cdn.cloudfiles.rackspacecloud.com/content/images/winterize-your-home-prevent-pipes-freezing_9c6d484662c83ee52ff57f21fa6ae1d1.jpg') no-repeat center; background-size: cover;}
+    &.image-03 { background: url('http://c0263062.cdn.cloudfiles.rackspacecloud.com/content/images/winterize-your-home-shoveling-snow_a0770ebd9de2c90f8802359b28167f64.jpg') no-repeat center; background-size: cover;}
+    &.image-04 { background: url('http://c0263062.cdn.cloudfiles.rackspacecloud.com/content/images/winterize-your-home-storage_8fce60d27c5c347c9e6af1d377304f70.jpg') no-repeat center; background-size: cover;}
+    &.image-05 { background: url('http://c0263062.cdn.cloudfiles.rackspacecloud.com/content/images/winterize-your-home-talc-squeaky-floor_9d6d88a9d3591085405678a30f441441.jpg') no-repeat center; background-size: cover;}
+  }
+  
+  .more {
+    display: block;
+    width: auto;
+    @include font('bold');
+    margin: 30px auto 0;
+    border: 2px solid #eee;
+    padding: 15px 0;
+    text-align: center;
+    color: #222;
+    text-decoration: none;
+    @include transition(all, .233s, .0s);
+    
+    &:hover {
+      color: #1a8cf3;
+      border-color: #eee;
+    }
+  }
+}
+
+
+
+.circle-clip-path {
+  position: absolute;
+  -webkit-clip-path: ellipse(45% 45% at 50% 55%);
+          clip-path: ellipse(45% 45% at 50% 55%);
+}
+
+.circled {
+  -webkit-transform: translateX(0) translateY(0) scale(1);
+          transform: translateX(0) translateY(0) scale(1);
+  animation: moveit-out .377s $cubic 0s 1 alternate, circleit-out .521s $cubic .377s 1 alternate;
+}
+
+.article-text {
+  opacity: 1;
+  margin-top: 0;
+  position: relative;
+  transition: opacity .521s $cubic .610s, margin .377s $cubic .610s ;
+}
+
+.hover-text {
+  position: absolute;
+  width: 50%;
+  top: 5%;
+  left: 25%;
+  z-index: -1;
+  opacity: 0;
+  transition: left .233s $cubic 0s, opacity .233s $cubic 0s;
+  @include transition(left, .233s, 0s);
+}
+
+
+.clipped:hover {
+
+  .circled {
+    animation: circleit-in .377s $cubic 0s 1 alternate, moveit-in .521s $cubic .377s 1 alternate;
+    -webkit-transform: translateX(-27%) translateY(-25%) scale(.4);
+            transform: translateX(-27%) translateY(-25%) scale(.4);
+  }
+  
+  .hover-text {
+    left: 45%;
+    opacity: 1;
+    transition: left .233s $cubic .610s, opacity .233s $cubic .610s;
+  }
+
+  .article-text {
+    opacity: 0;
+    margin-top: -8%;
+    transition: opacity .144s $cubic 0s, margin .144s $cubic 0s;
+  }
+
+  .articles-list {
+    top: 40%;
+    @include transition(top, .377s, 0s);
+  }
+}
