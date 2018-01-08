@@ -1,183 +1,88 @@
-html {
-  line-height: $golden;
-  color: #000;
-  font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
-  font-weight: lighter;
-  font-size: 26px;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-input {
-  -webkit-appearance: none;
-  border-radius: 0;
+a, button {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+	text-decoration: none;
 }
 
-::selection,
-::-moz-selection {
-  background: #222;
-  color: #fff;
+body, button, h1, h2, h3, h4, h5, h6, hr, ol, p, ul {
+  margin: 0;
 }
 
-$cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+button, ol, ul {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
 
 body {
-  background: #f6f6f6;
+  background: #FCFCF7;
 }
 
-a {
-  border-bottom: 1px dotted #ccc;
-  opacity: .4;
-  @include transition(color 1s ease, opacity 1s ease);
-  
-  &:hover {
-    color: #f33;
-    opacity: 1;
-    @include transition(color .3s ease, opacity .3s ease);
-  }
+html {
+  color: rgb(0, 0, 0);
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-weight: bolder;
+  font-size: 3vw;
+  line-height: 4.75vw;
+  letter-spacing: -0.20vw;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, p, a, span {
-  font-size: 1rem;
-  letter-spacing: 0.15rem;
-  color: #000;
-  font-weight: lighter;
-  text-decoration: none;
-  line-height: 1rem;
-  
-  span { opacity: .4; padding-left: 5px; }
-  
-  br { display: none; }
+section {
+	display: table;
+	height: 100vh;
+	width: 100vw;
+	padding-left: 4rem;
+	
+	h1 {
+		display: table-cell;
+		vertical-align: top;
+	}
+	
+	p, span {
+		display: table-cell;
+		vertical-align: bottom;
+		font-size: .3rem;
+		letter-spacing: 0;
+		font-weight: lighter;
+	}
+	
+	span {
+		vertical-align: top;
+		display: table-row;
+	}
+	
+	h1, a {
+		color: #000;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
-.vcard {
-  display: table;
-  height: 200px;
-  width: 74%;
-  position: fixed;
-  top: 50%;
-  left: 13%;
-  margin-top: -100px;
-  opacity: 1;
-  @include transition(opacity .5s $cubic);
-  
-  &.hide { opacity: 0; }
-  
-  h1, ul {
-    display: table-cell;
-    vertical-align: middle;
-    width: auto;
-    text-align: left;
-  }
-  
-  ul { margin-top: 0;}
-  
-  ul li {
-    display: block;
-    height: 40px;
-    
-    a {
-      display: inline-block;
-      width: auto;
-      line-height: 40px;
-      border: none;
-    }
-  }
-}
-
-.work {
-  display: block;
-  width: 100%;
-  position: relative;
-  z-index: 2;
-  padding: 100vh 12vw 50vh;
-  pointer-events: none;
-  opacity: 1;
-  
-  .project {
-    display: block;
-    margin-bottom: 50vh;
-    
-    img { margin-bottom: 5vw; }
-  }
-  
-  h2 {
-    width: 100vh;
-    height: 8vw;
-    @include transform(rotate(-90deg));
-    position: fixed;
-    text-align: center;
-    bottom: -8vw;
-    left: 0;
-    transform-origin: left top;
-    vertical-align: middle;
-    line-height: 8vw;
-    opacity: 0;
-    @include transition(opacity .25s $cubic);
-    
-    &.show {
-      opacity: 1;
-      @include transition(opacity .5s $cubic .25s);
-    }
-  }
-  
-  img {
-    display: block;
-    width: 100%;
-  }
-}
-
-@media #{"only screen and (max-width : 1680px)"} { html { font-size: 23px; } }
-
-@media #{"only screen and (max-width : 1440px)"} { html { font-size: 20px; } }
-
-@media #{"only screen and (max-width : 853px)"} {
-  .vcard {
-    display: block;
-    height: 400px;
-    margin-top: -200px;
-    
-    h1, ul {
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
-    
-    ul {
-      margin-top: 50%;
-      
-      li { height: 44px; }
-    }
-  }
-  .work {
-    padding: 100vh 9vw 70vh;
-    
-    .project { margin-bottom: 30vh; background: transparent; }
-  }
-}
-
-@media #{"only screen and (max-width : 414px)"} {
-  html { font-size: 18px;}
-  
-  .vcard {
-    width: 90%;
-    left: 5%;
-    
-    h1 {
-      line-height: 2.2rem;
-      
-      span { padding-left: 0; }
-      br { display: block; }
-    }
-    
-    ul { margin-top: 40%; }
-  }
-  
-  .work {
-    padding: 100vh 7vw 80vh;
-    
-    .project { background: #f6f6f6; }
-    
-    h2 { display: none; }  
-  }
+@media #{"only screen and (max-width : 800px)"} {
+  html {
+    font-size: 6.5vw;
+    line-height: 11vw;
+	}
+	
+	section {
+		padding-left: 1rem;
+		
+		p {
+			font-size: .4rem;
+		}
+	}
 }
